@@ -1,0 +1,404 @@
+
+          {% extends 'base.html' %}  
+		  {% block body %} 
+		  {% load static %}
+        <!-- Start Page Title Area -->
+        <div class="page-title">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <h3>Volunteer</h3>
+                        
+                        <ul>
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li>/</li>
+                            <li>Volunteer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+        
+        <!-- Start Volunteer Area -->
+        <section class="volunteer-area ptb-100">
+            <div class="container">
+                <div class="row">
+					{% for v in v %}
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="/media/{{v.image}}" alt="team" style="height:300px;">
+							
+							<div class="team-content">
+							<a href="{% url 'volunteerdetail'  v.id %}">	<a href="{% url 'volunteerdetail' v.id %}">	<h4>{{v.name}}</h4></a></a>
+								<span>{{v.designation}}</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+					{% comment %}
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img2.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="{{v.fb_link}}"><i class="icofont-facebook"></i></a></li>
+											<li><a href="{{v.tw_link}}"><i class="icofont-twitter"></i></a></li>
+											<li><a href="{{v.ins_link}}"><i class="icofont-instagram"></i></a></li>
+											<li><a href="{{v.ln_link}}"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img3.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img4.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img1.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img2.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img3.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img4.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img1.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img2.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img3.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img4.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img1.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img2.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img3.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+						<div class="single-team">
+							<img src="{% static 'assets/img/team-img4.jpg' %}" alt="team">
+							
+							<div class="team-content">
+								<a href="{% url 'volunteerdetail'  v.id %}">	<h4>Alex Maxwel</h4></a>
+								<span>CEO & President</span>
+								
+								<ul>
+									<li><a href="#"><i class="icofont-share"></i></a>
+										<ul class="social-dropdown">
+											<li><a href="#"><i class="icofont-facebook"></i></a></li>
+											<li><a href="#"><i class="icofont-twitter"></i></a></li>
+											<li><a href="#"><i class="icofont-instagram"></i></a></li>
+											<li><a href="#"><i class="icofont-linkedin"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+					{% endcomment %}
+                </div>
+            </div>
+        </section>
+        <!-- End Volunteer Area -->
+        
+		<!-- jQuery Min JS -->
+		<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'assets/js/jquery.min.js' %}"></script>
+		<!-- Popper Min JS -->
+		<script src="{% static 'assets/js/popper.min.js' %}"></script>
+		<!-- Bootstrap Min JS -->
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<!-- Owl Carousel Min Js -->
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <!-- Magnific Popup JS -->
+        <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- MixitUp JS -->
+        <script src="{% static 'assets/js/jquery.mixitup.min.js' %}"></script>
+		<!-- Jquery Menu JS -->
+		<script src="{% static 'assets/js/jquery.meanmenu.js' %}"></script>
+		<!-- WoW JS -->
+		<script src="{% static 'assets/js/wow.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'assets/js/main.js' %}"></script>
+		{% endblock %}

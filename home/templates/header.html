@@ -1,0 +1,196 @@
+{% load static %}
+<!doctype html>
+<html lang="zxx">
+	
+<!-- Mirrored from templates.envytheme.com/kylehope/default/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2023 14:08:27 GMT -->
+<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+		<!-- IcoFont CSS -->
+		<link rel="stylesheet" href="{% static 'assets/css/icofont.min.css' %}">
+		<!-- Owl Carousel CSS -->
+		<link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
+		<!-- Magnific Popup CSS -->
+		<link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+		<!-- Owl Theme Default CSS -->
+		<link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+ 
+		
+<title>Young Politics - Political Campaign/Activities HTML Template</title>
+<!-- <link rel="icon" href="icon_path" type="static/assets/img/yp1"> -->
+	</head>
+	
+	<body>
+		<!-- Start Preloader Area -->
+		<!-- <div class="preloader-area">
+			<div class="sk-folding-cube">
+				<div class="sk-cube1 sk-cube"></div>
+				<div class="sk-cube2 sk-cube"></div>
+				<div class="sk-cube4 sk-cube"></div>
+				<div class="sk-cube3 sk-cube"></div>
+			</div>
+		</div> -->
+		<!-- End Preloader Area -->
+		
+        <!-- Top Header Area -->
+        <header class="header-area">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <ul class="header-info">
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Issues</a></li>
+                                <!-- <li><a href="{% url 'volunteer' %}">Volunter</a></li> -->
+                                <li><a href="#">Policy</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6">
+                            <ul class="social-link">
+                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                                <li><a href="#"><i class="icofont-skype"></i></a></li>
+                                <li><a href="#"><i class="icofont-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header Area -->
+		
+		<!-- Start Main Menu Area -->
+        <div class="main-menu-area main-menu-two header-sticky">
+            <div class="container">
+                <nav class="main-navbar-nav">
+					<div class="logo">
+						<!-- <a href="{% url 'index' %}">
+							<img src="{% static 'assets/img/logo.png' %}" alt="logo"> -->
+							<!-- <img src="{% static 'assets/img/yp1.png' %}"> -->
+						<!-- <span style="font-size: large;">Young Politics</span> -->
+						<a href="/" style="font-weight:bold;font-size:30px;color : #090909">
+							Young<span style="color: #ff4d4d">Politics</span>
+						</a>
+						<!-- </a> -->
+					</div>
+					
+                    <ul class="main-nav">
+                        <li><a href="{% url 'index' %}" class="active">Home</a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a href="index.html">Home demo One</a></li>
+                                <li class="active"><a href="index-2.html">Home demo Two</a></li>
+                                <li><a href="index-3.html">Home demo Three</a></li>
+                            </ul> -->
+                        </li>
+                        
+                        <li><a href="{% url 'about' %}">About</a></li>
+						
+						<li><a href="{% url 'events' %}">Events</a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a href="{% url 'events' %}">Events</a></li>
+                                <li><a href="">Events details</a></li>
+                            </ul> -->
+                        </li>
+
+						<li><a href="{% url 'campaign' %}">Services</a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a href="{% url 'history' %}">Services</a></li>
+                                <li><a href="{% url 'team' %}">Our Team</a></li>
+								<li><a href="{% url 'campaign' %}">Campaign Management</a></li>
+                            </ul> -->
+                        </li>
+                        
+                        {% comment %} <li><a href="{% url 'history' %}">Services</a></li> {% endcomment %}
+                        <!-- <li><a href="{% url 'donate' %}">Donate now</a></li> -->
+						<li><a href="{% url 'volunteer' %}">Volunteer</a>
+							<!-- <ul class="dropdown-menu">	
+								<li><a href="">Volunteer details</a></li>	
+								<li><a href="{% url 'becomevolunteer' %}">Become a volunteer</a></li>
+								</ul> -->
+								</li>
+                         <!-- <li><a href="#">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'about' %}">About</a></li>
+								
+                                <li><a href="{% url 'history' %}">History</a></li>
+								
+								<li><a href="{% url 'volunteer' %}">Volunteer</a>
+									<ul class="sub-menu">
+										<li><a href="{% url 'volunteer' %}">Volunteer</a></li>
+										<li><a href="">Volunteer details</a></li>
+									</ul>
+								</li>
+								
+								<li><a href="{% url 'gallery' %}">Gallery</a></li>
+								
+								<li><a href="#">Events</a>
+									<ul class="sub-menu">
+										<li><a href="{% url 'events' %}">Events</a></li>
+										<li><a href="">Events details</a></li>
+									</ul>
+								</li>
+								
+                                <li><a href="#">News</a>
+									<ul class="sub-menu">
+										<li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
+										<li><a href="{% url 'blog' %}">Blog</a></li>
+										<li><a href="">Blog details</a></li>
+									</ul>
+								</li>
+								
+								<li><a href="{% url 'donate' %}">Donate now</a></li>
+								
+								<li><a href="{% url 'becomevolunteer' %}">Become a volunteer</a></li>
+								
+								<li><a href="{% url 'faq' %}">FAQ</a></li>
+								
+								<li><a href="error.html">404 error</a></li>
+                            </ul>
+                        </li> -->
+                        
+                        <li><a href="{% url 'gallery' %}">Gallery</a></li>
+						
+						<li><a href="{% url 'blog' %}">Blog</a>
+                            <!-- <ul class="dropdown-menu">
+                                <li><a href="{% url 'blog' %}">Blog</a></li>
+								<li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+								<li><a href="{">Blog details</a></li>
+                            </ul> -->
+                        </li>
+                        
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+						
+						<!-- <li> -->
+							
+							<!-- <div class="search-wrapper">  
+								<div class="searchline-wrapper">
+									
+									<input class="searchline" type="text" placeholder="Search..." name="search">
+								</div>
+								<button class="search-button">
+								
+									<i class="icofont-search-1"></i>
+								
+									<i class="icofont-close"></i>
+								</button>
+							
+							</div> -->
+							
+						<!-- </li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- End Main Menu Area -->

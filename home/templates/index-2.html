@@ -1,0 +1,1199 @@
+    
+    {% extends 'base.html' %}  
+    {% block body %} 
+    {% load static %}  
+     <style>
+    .main-banner-two {
+    height: 700px;
+    background-image: url(../static/assets/img/page-title-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+     </style>
+        <!-- Start Main Banner Area -->
+        
+        <div class="main-banner-two">
+           
+            <div class="d-table">
+                <div class="d-table-cell">
+                    
+                    <div class="container">
+                        <div class="row">
+                          
+                            <div class="home-slides home-slides-two owl-carousel carousel_se_01_carousel owl-theme" style="background-image: url()">
+                                
+                                <div class="col-lg-7 col-md-12">
+                                    <h1>Inspire Innovation at your<span>Reach</span></h1>
+                                    <p>If you are preparing for the election you have reached the right place.</p>
+                                    <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
+                                    <!-- <a href="{% url 'donate' %}" class="btn btn-secondary">Donate Now</a> -->
+                                </div>
+                                
+                                <div class="col-lg-7 col-md-12">
+                                    <h1>Political Survey & Information
+                                        Technology drives all we do</h1>
+                                    <p>ElectionCare uses Political survey and political information technology to change voter behavior. Visit our Political survey or Political information technology divisions to see how we can help you..</p>
+                                    <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
+                                    <!-- <a href="{% url 'donate' %}" class="btn btn-secondary">Donate Now</a> -->
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </div>
+        
+        <!-- End Main Banner Area -->
+        
+        <!-- Start Boxes Area -->
+        <section class="boxes-area ptb-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="boxes-content">
+                            <h3>Contribution for the party</h3>
+                            <p>Political party means a group of persons organized to acquire and exercise political power. In our country, there are several political parties that stand for the election. The presence of the political party is actually a healthy situation for the nation. It gives people a choice to make a more evolved and effective decision.</p>
+                            
+                            <!-- <a href="{% url 'donate' %}" class="btn btn-primary">Donate for us</a> -->
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6">
+                        <div class="boxes-content">
+                            <h3>Become a volunteer</h3>
+                            <p>We will connect with the candidate’s locality to
+                                understand the voter’s concern. Will convince them to
+                                become the actual voter not a promise voter by
+                                reassurance of development and reaching out for their
+                                concern.</p>
+                            
+                            <a href="{% url 'becomevolunteer' %}" class="btn btn-secondary">Join now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Boxes Area -->
+        
+        <!-- Start About Area -->
+        <section class="about-area ptb-100">
+            <h1 style='margin-left:340px'> <span style='color:red'> A Good Leader </span> Should have !!</h1>
+            <br><br><br>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="about-box mt-0">
+                            <i class="icofont-diamond"></i>
+                            <h3>Intergity</h3>
+                            <p>In politics, integrity means something a little different from its common usage. The currency of politics is not money, which we have too much of anyway, but loyalty, of which we have way too little.</p>
+                            {% comment %} <a href="#" class="read-more">Read More</a> {% endcomment %}
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="about-box">
+                            <i class="icofont-diamond"></i>
+                            <h3>Self-awareness</h3>
+                            <p>Despite widespread concern over false beliefs about politically-relevant facts, little is known about how strongly Americans believe their answers to poll questions.</p>
+                            {% comment %} <a href="#" class="read-more">Read More</a> {% endcomment %}
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="about-box">
+                            <i class="icofont-diamond"></i>
+                            <h3>Influence</h3>
+                            <p>Political influence is the power sought for by politically active persons like legislators, ministers, leaders, etc. For some persons it is a source of enjoyment for its own sake, while for others it may be a means to determine or affect a policy.</p>
+                            {% comment %} <a href="#" class="read-more">Read More</a> {% endcomment %}
+                        </div>
+                    </div>
+                       
+                    <div class="col-lg-4" style='margin-top:30px;'>
+                        <div class="about-box">
+                            <i class="icofont-diamond"></i>
+                            <h3>Diligence</h3>
+                            <p>Due diligence is widely seen an essential step in the hiring of top professionals in the largest corporations and legal firms, and is becoming more and more prominent in the investment and M&A; scene. Oddly enough, there is not a specified background screening program for politicians.</p>
+                            {% comment %} <a href="#" class="read-more">Read More</a> {% endcomment %}
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" style='margin-top:30px;'>
+                        <div class="about-box">
+                            <i class="icofont-diamond"></i>
+                            <h3>Gratitude</h3>
+                            <p>Gratitude is an emotion similar to appreciation. The American Psychological Association (n.d.) more specifically defines this phenomenon as a sense of happiness and thankfulness in response to a fortunate happenstance or tangible gift.</p>
+                            {% comment %} <a href="#" class="read-more">Read More</a> {% endcomment %}
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" style='margin-top:30px;'>
+                        <div class="about-box">
+                            <i class="icofont-diamond"></i>
+                            <h3>Empathetic</h3>
+                            <p>Empathy simply means the ability to understand and share the feelings of another. Today, Empathy in politics is standing with or pushing for the general people on their positions of political participation, governance and leadership direction.</p>
+                            {% comment %} <a href="#" class="read-more">Read More</a> {% endcomment %}
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" style='margin-top:30px;'>
+                        <div class="about-box">
+                            <i class="icofont-diamond"></i>
+                            <h3>Communication</h3>
+                            <p>Political communication is a subfield of communication and political science that is concerned with how information spreads and influences politics, policy makers, the news media, and citizens.</p>
+                            {% comment %} <a href="#" class="read-more">Read More</a> {% endcomment %}
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" style='margin-top:30px;'>
+                        <div class="about-box">
+                            <i class="icofont-diamond"></i>
+                            <h3>Adaptibility</h3>
+                            <p>Adaptability is the potential to adjust and learn new skills in response to changing factors, conditions, or environments. It is a soft skill that is highly valued by employers because every industry can be unpredictable. </p>
+                            {% comment %} <a href="#" class="read-more">Read More</a> {% endcomment %}
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End About Area -->
+        
+        <!-- Start Support Area -->
+        <section class="support-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="support-content">
+                            <h3>Your political <span>support</span> make bigest help for big history</h3>
+                            <p>A good politicians acknowledge the flaws and a good campaign management team
+                                Will know how to prepare a plan in advance to reponse future attacks, with top of
+                                that we will work to turn that perceived negative into positive by building your
+                                image.</p>
+                            <a href="{% url 'contact' %}" class="btn btn-secondary">Contact Us</a>
+                            <!-- <a href="{% url 'donate' %}" class="btn btn-primary">Donate Now</a> -->
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="support-image wow fadeInUp">
+                            <img src="{% static 'assets/img/shouting.png' %}" alt="shouting">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Support Area -->
+
+        <section class="mission-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <h2> <span style='color:red'> Our  </span> Mission</h2>
+                    <p>Our media management support goes far beyond writing speeches. 
+                       </p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-12">
+                        <div class="single-mission">
+                            
+                          
+                          <p style='text-align:left'><span>1. </span> It's important to know what you want people to remember before you start
+                            talking. </p>
+                          <p style='text-align:left'><span>2. </span> A good politician walks in to any speech knowing what they want to tell
+                            their audience before they say a single word. A company needs to know
+                            what take - away they want their customers, prospects and employees to
+                            remember and feel before any action they take. The public relations
+                            strategy and wording used needs to mirror the intended take - away.
+                             </p>
+                          <p style='text-align:left'><span>3. </span> Be consistent. It's hard to trust a flip - flopper, so repeat the same message
+                            as often as possible. Only then will people hear it and remember it</p>
+                          <p style='text-align:left'><span>4. </span> Own it. In the rare cases where you must do a flip - flop, own it. Explain why
+                            the change was the right thing to do. People are more than willing to forgive
+                            a mistake, but only if you own it and don't hide it </p>
+                          <p style='text-align:left'><span>5. </span> There's a lot more we learned working in politics which I credit to how we
+                            create strong, effective PR campaigns for our clients </p>
+
+                            <p style='text-align:left'><span>6. </span> We strive to ensure that. That the popularity of the candidates continued to grow in the right direction through the hard work of our team and innovative technologists and skilled politicians. </p>  
+                        
+                         
+                        </div>
+                    </div>
+
+                </section>
+
+        
+        <!-- Start Our Mission Area -->
+        <section class="mission-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <h2> <span style='color:red'> Our </span> Capabilities</h2>
+                    <p>Our media management support goes far beyond writing speeches. We aimed at crafting your
+                        personality to be of a politician who is honest, trustworthy, attentive and hard working.
+                       </p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-education"></i>
+                            <h3>Leadership Training</h3>
+                            <p>We offer a quality of leadership development programs that serve the learning needs of leaders. We work with top training providers to tie those leadership roles to you.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-building"></i>
+                            <h3>Introductory consultation</h3>
+                            <p>As a leader , your current focus is to establish your goals . Here we provide you the supplementary session with the aim of successful result.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-airplane-alt"></i>
+                            <h3>Assembly voter Research 
+                            </h3>
+                            <p>We make strategy with anyaltical research about the voters in the assembly constituency .
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-chart-pie"></i>
+                            <h3>Constituency and voter base profiling</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-life-bouy"></i>
+                            <h3>Election development</h3>
+                            <p>We work on the profile of the elected area on the basis of voters for top results.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Voter Communication
+                            </h3>
+                            <p>We maintain regular coordination of a leader with the voters of area. And we are the best in this work we have best media and communications experts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Vote appeal and awareness 
+                            </h3>
+                            <p>Through digital medium we spread awareness towards voters at the ground level.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Shape Campaign
+                            </h3>
+                            <p>We are ready to serve you to strengthen your position in the candidate field. We give the shape to your whole political campaign with the help of shape campaign.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Analytics and political Intelligence
+                            </h3>
+                            <p>To build an effective political strategies data analytics plays a vital role with great Power and make you stronger in the future election campaign to put in the best effort and achieve results.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Registration of political party
+                            </h3>
+                            <p>Young politics a broad based political consultancy services for registering a political party with the election commission of India.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Manifesto creation 
+
+                            </h3>
+                            <p>Young politics is here for helping you in your manifesto creation.
+                                Manifesto is connected with the hearts of the voters which directly benefits the candidate in any election. We do proper research on your voters and constituency with this research we find that what exactly the voter want and this is the key of your manifesto.
+                                Young politics is ready to work on the manifesto for you.
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Election expenditure management
+                            </h3>
+                           <p>Our best experts provide you post election expense management services.
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Reputation Management
+                            </h3>
+                            <p>We work on assess and enhancement of your image in your Constituency. We have best media experts. We work on your proper image building and reputation management.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Fund Raising programme 
+
+                            </h3>
+                            <p>We maintain regular coordination of a leader with the voters of area. And we are the best in this work we have best media and communications experts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Voter Communication
+                            </h3>
+                            <p>We build our network widely to find the supporters before the campaign and raise funds from them with the help of fund raising strategies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Booth management 
+                            </h3>
+                            <p>With the help of booth management we are ready for you to strengthen your position in candidates field. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Political startegy consulting
+                            </h3>
+                            <p>It includes election campaign activities with strategic alignment by conducting surveys and with the help of technology.
+                                A systematic evaluation at various points during the campaign and election is a key to sucess. 
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Filling of Nomination
+
+                            </h3>
+                            <p>We help you in filling your nomination with the help of our best law experts so that your nomination form does not get any error and it is accepted by the election commission.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Filling of Nomination
+
+                            </h3>
+                            <p>We help you in filling your nomination with the help of our best law experts so that your nomination form does not get any error and it is accepted by the election commission.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Documentary services 
+
+                            </h3>
+                            <p>By making videos, posters in the form of attractive documents we are able to keep our thoughts to the people for the achievement of your goal.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Constituency centric political strategies
+                            </h3>
+                            <p>We provide you to formulate central political strategies in the elected area and tell you how to work on it. We help you to execute all your strategies in your area at the ground level.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>PR, advertising and media management
+                            </h3>
+                           <p>With the help of print media , digital, online and social media we are able to create an emotional connect with the voters. We have the best media and communications experts team.
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Filed survey and voter connectivity 
+
+                            </h3>
+                           <p>Your reach to voters will be increased through land surve, jansabha, rallies, padyatra, nukkad sabha and door to door campaigns. We work for make your unique connectivity with your voters.
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Door to door campaign 
+
+                            </h3>
+                            <p>With the help of our strategies we provide door to door campaign services for the promotion of the candidate.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Advertising vans 
+
+                            </h3>
+                            <p>Our firm organise and manage all events like conferences, promotional activities, LED on vehicles, Road shows etc.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Advertising vans 
+
+                            </h3>
+                            <p>Our firm organise and manage all events like conferences, promotional activities, LED on vehicles, Road shows etc.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Constituency profiling
+
+                            </h3>
+                           <p>With the help of constituency profiling we make sure that you should aware of the extraordinary points of the area and ordinary points of the area. 
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Political branding activity at ground level
+
+                            </h3>
+                           <p>In this, we work on your image and reputation at the ground level. We make  sure that your reach should be up to the last voter of your constituency and your image should be very good in their eyes.
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Opinion polls
+                            </h3>
+                           <p>The unbiased and neutral opinion poll is very important to understand the mood of voters in the constituency.
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Data analytics
+
+                            </h3>
+                            <p>There is so much Data fathered around us everyday but it is so important that we analyse tha Data and find the sense of it.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>campaign management
+
+                            </h3>
+                            <p>This is the most important part of our election. We ensure that campaign should be moving in right direction according the need of our candidate.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>creative and innovative content
+
+                            </h3>
+                           <p>Successful campaign depends a lot on creative and innovative campaign. So we can increase our reach to voters and convince them. We believe that "content minimum and connect maximum"
+
+                           </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Digital marketing
+
+                            </h3>
+                           <p>Today we are in the digital world so it is very important for you to be present where your target audience are present. 
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3> Brand building and image building
+
+                            </h3>
+                           <p>Brand building and image building is very important. Your image in the eyes of voter should be very good. Voters should have trust on the candidate. And this is what we do through brand building and image building.
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Tech assistance
+                            </h3>
+                            <p>Today we are in the world of technology. This is so important that you should take help of technology in your campaign and other events. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="single-mission">
+                            <i class="icofont-heart-beat"></i>
+                            <h3>Best team
+                            </h3>
+                           <p>We have the best experts and team to manage your whole political affairs. Our experts are well qualified from prestigious universities of India. Our experts understand the Indian politics and democracy very well.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Our Mission Area -->
+        
+        <!-- Start FunFacts Area -->
+        <section class="funfacts-area">
+            <div class="map-image">
+                <img src="{% static 'assets/img/map.png' %}" alt="map">
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="funFact top-line">
+                            <h3><span class="count">25898</span>+</h3>
+                            <p>Total members</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="funFact bottom-line">
+                            <h3><span class="count">45787</span>+</h3>
+                            <p>Total donations</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="funFact top-line">
+                            <h3><span class="count">78452</span>+</h3>
+                            <p>Total campaigns</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="funFact bottom-line">
+                            <h3><span class="count">45898</span>+</h3>
+                            <p>Our achievements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End FunFacts Area -->
+        
+        <!-- Start Upcoming Campaigns -->
+        <section class="upcoming-campaigns ptb-100">
+            <div class="container">
+               <div class="section-title">
+                    <h2>Upcoming Events</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="single-campaigns">
+                            <div class="campaigns-img">
+                                <img src="/media/{{el.image}}" alt="campaign">
+                                
+                                <div class="date">
+                                    <!-- <span>31</span> -->
+                                   {{el.date}}
+                                </div>
+                            </div>
+                            
+                            <div class="campaigns-content">
+                                <h3><a href="#">{{el.name}}</a></h3>
+                                <p>{{el.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="campaigns-box">
+                            {% for e in e %}
+                            <div class="single-campaigns">
+                                <div class="campaigns-content">
+                                    <div class="date">
+                                        <span>{{e.date |date:"d"}}</span>
+                                        {{e.date |date:"M , Y"}}
+                                    </div>
+                                    
+                                    <h3><a href="#">{{e.name}}</a></h3>
+                                    <p>{{e.description}}</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            {% comment %}
+                            <div class="single-campaigns">
+                                <div class="campaigns-content">
+                                    <div class="date">
+                                        <span>31</span>
+                                        Dec, 2021
+                                    </div>
+                                    
+                                    <h3><a href="#">How should conservatives address perceptions of political bias online?</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="single-campaigns">
+                                <div class="campaigns-content">
+                                    <div class="date">
+                                        <span>31</span>
+                                        Dec, 2021
+                                    </div>
+                                    
+                                    <h3><a href="#">RISE UP VIRGINIANS: Join us for a training on getting money out of politics</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="single-campaigns">
+                                <div class="campaigns-content">
+                                    <div class="date">
+                                        <span>31</span>
+                                        Dec, 2021
+                                    </div>
+                                    
+                                    <h3><a href="#">China's Military and Geopolitical Rise and its Challenge to the US</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="single-campaigns mb-0">
+                                <div class="campaigns-content">
+                                    <div class="date">
+                                        <span>31</span>
+                                        Dec, 2021
+                                    </div>
+                                    
+                                    <h3><a href="#">The Israel Lobby and American Policy 2021 Conference</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                </div>
+                            </div>
+                            {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Upcoming Campaigns -->
+        
+        <!-- Start Donate Area -->
+        <section class="donate-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Donate today</h2>
+                    <p>Political Parties receive huge sums of money in the form of donations and contributions from corporate, trusts and individuals.</p>
+                </div>
+                
+                <div class="donate-price">
+                    <ul>
+                        <li><a href="#">$50</a></li>
+                        <li><a href="#">$100</a></li>
+                        <li><a href="#">$150</a></li>
+                        <li><a href="#">$200</a></li>
+                        <li><a href="#">$450</a></li>
+                    </ul>
+                    <!-- <a href="{% url 'donate' %}" class="btn btn-primary">Donate Now</a> -->
+                </div>
+            </div>
+        </section>
+        <!-- Start Donate Area -->
+        
+        <!-- Start History CSS -->
+        <section class="history-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Political history</h2>
+                    <p>Elections Win Let’s Change History </p>
+                </div>
+                
+                <div class="row">
+                    <div class="history-timeline">
+                        <div class="single-history">
+                            <div class="history-content left-side">
+                                <h3>01</h3>
+                                <h4>1750-1800</h4>
+                                <p>Election Care best Political Consulting & Political Campaign Services firm in India. Help you boost up your image & reputation using the Voters. We are the Best political consulting firm in India. We make Visible you on multiple channels connections and resources.</p>
+                            </div>
+                            
+                            <div class="history-image">
+                                <img src="{% static 'assets/img/history-img1.jpg' %}" alt="history">
+                            </div>
+                        </div>
+                        
+                        <div class="single-history">
+                            <div class="history-content right-side">
+                                <h3>02</h3>
+                                <h4>1800-1850</h4>
+                                <p>We Deliver Public Leader & Party Menifesto or Voice to more peoples to aware them. So Join best political campaign management agency of india. We have professional & skilled staff. election care have Good experience in political management in India.  We helped many national & state level leaders to convey their message & Campaign in society through political campaign India.</p>
+                            </div>
+                            
+                            <div class="history-image">
+                                <img src="{% static 'assets/img/history-img2.jpg' %}" alt="history">
+                            </div>
+                        </div>
+                        
+                        <div class="single-history">
+                            <div class="history-content left-side">
+                                <h3>03</h3>
+                                <h4>1850-1900</h4>
+                                <p>Election Care Services are Digital Base. With Seasoned strategist and the best creative mind in the Political  and IT services, We have the right team to get the good things done</p>
+                            </div>
+                            
+                            <div class="history-image">
+                                <img src="{% static 'assets/img/history-img3.jpg' %}" alt="history">
+                            </div>
+                        </div>
+                        
+                        <div class="single-history">
+                            <div class="history-content right-side">
+                                <h3>04</h3>
+                                <h4>1900-2000</h4>
+                                <p>Political history is the narrative and survey of political events, ideas, movements, organs of government, voters, parties and leaders.[1] It is closely related to other fields of history, including diplomatic history, constitutional history, social history, people's history, and public history. Political history studies the organization and operation of power in large societies.</p>
+                            </div>
+                            
+                            <div class="history-image">
+                                <img src="{% static 'assets/img/history-img4.jpg' %}" alt="history">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End History CSS -->
+        
+        <!-- Start Achievement Area -->
+        <section class="achievement-area ptb-100">
+            <div class="overlay"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-4">
+                        <div class="video text-center">
+                            <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="video-play-btn popup-video">
+                                <i class="icofont-ui-play"></i>
+                                <span class="ripple"></span>
+                                <span class="ripple"></span>
+                                <span class="ripple"></span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-8">
+                        <div class="achievement-content">
+                            <div class="section-title">
+                                <h2>Our achievement</h2>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="achievement-slides owl-carousel owl-theme">
+                                    <div class="col-lg-12">
+                                        <div class="item">
+                                            <p>In this short period of six years, the advances of the Menzies period were consolidated. The Liberal governments moved ahead in the areas of traditional Liberal concern – health, education and welfare. The period is significant for a number of reasons, including foreign policy and defence initiatives, commitment to the aboriginal people and involvement with the rapidly changing world of technology, energy conservation and the environment.</p>
+
+                                            <h4>MacMahon Era (1966-1972)</h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12">
+                                        <div class="item">
+                                            <p>The Liberal governments moved ahead in the areas of traditional Liberal concern – health, education and welfare. The period is significant for a number of reasons, including foreign policy and defence initiatives, commitment to the aboriginal people and involvement with the rapidly changing world of technology, energy conservation and the environment. In this short period of six years, the advances of the Menzies period were consolidated.</p>
+
+                                            <h4>John Era (1966-1972)</h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12">
+                                        <div class="item">
+                                            <p>In this short period of six years, the advances of the Menzies period were consolidated. The Liberal governments moved ahead in the areas of traditional Liberal concern – health, education and welfare. The period is significant for a number of reasons, including foreign policy and defence initiatives, commitment to the aboriginal people and involvement with the rapidly changing world of technology, energy conservation and the environment.</p>
+
+                                            <h4>Steven Era (1966-1972)</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Achievement Area -->
+        
+        <!-- Start Volunteer Area -->
+        <section class="volunteer-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our volunteers</h2>
+                    <p>If you are interested in a career in politics or public service, volunteering for a political campaign is a great way to gain experience.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="team-slides owl-carousel carousel_se_02_carousel owl-theme">
+                        {% for v in v %}
+                        <div class="col-lg-12 col-md-12" style="padding-right: 15px;">
+                            <div class="single-team">
+                                <img src="/media/{{v.image}}" alt="team" style="height:250px ;">
+                                
+                                <div class="team-content">
+                                    <h4>{{v.name}}</h4>
+                                    <span>{{v.designation}}</span>
+                                    
+                                    <ul>
+                                        <li><a href="#"><i class="icofont-share"></i></a>
+                                            <ul class="social-dropdown">
+                                                <li><a href="{{v.fb_link}}"><i class="icofont-facebook"></i></a></li>
+                                                <li><a href="{{v.tw_link}}"><i class="icofont-twitter"></i></a></li>
+                                                <li><a href="{{v.ins_link}}"><i class="icofont-instagram"></i></a></li>
+                                                <li><a href="{{v.ln_link}}"><i class="icofont-linkedin"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% comment %}
+                        <div class="col-lg-12 col-md-12" style="padding-right: 15px;">
+                            <div class="single-team">
+                                <img src="{% static 'assets/img/team-img2.jpg' %}" alt="team">
+                                
+                                <div class="team-content">
+                                    <h4>Alex Maxwel</h4>
+                                    <span>CEO & President</span>
+                                    
+                                    <ul>
+                                        <li><a href="#"><i class="icofont-share"></i></a>
+                                            <ul class="social-dropdown">
+                                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12" style="padding-right: 15px;">
+                            <div class="single-team">
+                                <img src="{% static 'assets/img/team-img3.jpg' %}" alt="team">
+                                
+                                <div class="team-content">
+                                    <h4>Alex Maxwel</h4>
+                                    <span>CEO & President</span>
+                                    
+                                    <ul>
+                                        <li><a href="#"><i class="icofont-share"></i></a>
+                                            <ul class="social-dropdown">
+                                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12" style="padding-right: 15px;">
+                            <div class="single-team">
+                                <img src="{% static 'assets/img/team-img4.jpg' %}" alt="team">
+                                
+                                <div class="team-content">
+                                    <h4>Alex Maxwel</h4>
+                                    <span>CEO & President</span>
+                                    
+                                    <ul>
+                                        <li><a href="#"><i class="icofont-share"></i></a>
+                                            <ul class="social-dropdown">
+                                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Volunteer Area -->
+        
+        <!-- Start Testimonials Area -->
+        <section class="testimonials-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <h2>Feedback</h2>
+                        
+                        <div class="feedback-slides owl-carousel carousel_se_01_carousel owl-theme">
+                            <div class="item">
+                                <p>Our core team comprises of season edveterans from various fields -Market research, statistics and newsmedia. They together bring several decades of accumulated expertise about every corner of this vast country that is unrivalled and improves the chances of any political party and its candidates considerably.</p>
+                                <i class="icofont-quote-left"></i>
+                                
+                                <div class="client-info">
+                                    <img src="{% static 'assets/img/avator-1.png' %}" alt="avator">
+                                    
+                                    <h4>Ashlegh Gardner</h4>
+                                    <span>Founder & CEO, AWS Tech</span>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <p>Electoral battles are no longer fought with development and politics alone but also with statistical analysis of voting trends. It is no longer possible to win base donrhetoric.</p>
+                                <i class="icofont-quote-left"></i>
+                                
+                                <div class="client-info">
+                                    <img src="{% static 'assets/img/avator-1.png' %}" alt="avator">
+                                    
+                                    <h4>Ashlegh Gardner</h4>
+                                    <span>Founder & CEO, AWS Tech</span>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <p>Campaigns must be based on sound decisions driven by facts from the ground level. We enable electoral success by telling you what is the reinvoter's mind.</p>
+                                <i class="icofont-quote-left"></i>
+                                
+                                <div class="client-info">
+                                    <img src="{% static 'assets/img/avator-1.png' %}" alt="avator">
+                                    
+                                    <h4>Ashlegh Gardner</h4>
+                                    <span>Founder & CEO, AWS Tech</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="feedback-image wow fadeInUp">
+                            <img src="{% static 'assets/img/feedback-man.png' %}" alt="feedback">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials Area -->
+        
+        <!-- Start Latest News Area -->
+        <section class="latest-news ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <h3>Our Blogs</h3>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                </div>
+                
+                <div class="row">
+                    <div class="news-slides owl-carousel carousel_se_03_carousel owl-theme">
+                        {% for b in b %}
+                        <div class="col-lg-12 col-md-12" style="padding-right: 25px;">
+                            <div class="single-blog-post">
+                                <a href="{% url 'blogdetail' b.id %}"><img src="/media/{{b.img}}" alt="blog" style="height:200px;"></a>
+                                
+                                <div class="blog-content" style="height:200px;">
+                                    <h4><a href="#">{{b.title}}</a></h4>
+                                    
+                                    <ul class="post-meta">
+                                        <li><a href="#"><i class="icofont-clock-time"></i>{{b.date}}</a></li>
+                                        <!-- <li><a href="#"><i class="icofont-comment"></i> 15</a></li> -->
+                                    </ul>
+                                    
+                                    <ul class="share-social">
+                                        <li><a href="#"><i class="icofont-share"></i></a>
+                                            <ul class="social-dropdown">
+                                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% comment %}
+                        <div class="col-lg-12 col-md-12" style="padding-right: 25px;">
+                            <div class="single-blog-post">
+                                <a href="#"><img src="{% static 'assets/img/blog-img2.jpg' %}" alt="blog"></a>
+                                
+                                <div class="blog-content">
+                                    <h4><a href="#">Fast tracking TAX relife for small and medium businesses</a></h4>
+                                    
+                                    <ul class="post-meta">
+                                        <li><a href="#"><i class="icofont-clock-time"></i> 23 Jan, 2021</a></li>
+                                        <li><a href="#"><i class="icofont-comment"></i> 15</a></li>
+                                    </ul>
+                                    
+                                    <ul class="share-social">
+                                        <li><a href="#"><i class="icofont-share"></i></a>
+                                            <ul class="social-dropdown">
+                                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12" style="padding-right: 15px;">
+                            <div class="single-blog-post">
+                                <a href="#"><img src="{% static 'assets/img/blog-img3.jpg' %}" alt="blog"></a>
+                                
+                                <div class="blog-content">
+                                    <h4><a href="#">$50 million to provide life-saving support to cancer patients</a></h4>
+                                    
+                                    <ul class="post-meta">
+                                        <li><a href="#"><i class="icofont-clock-time"></i> 23 Jan, 2021</a></li>
+                                        <li><a href="#"><i class="icofont-comment"></i> 15</a></li>
+                                    </ul>
+                                    
+                                    <ul class="share-social">
+                                        <li><a href="#"><i class="icofont-share"></i></a>
+                                            <ul class="social-dropdown">
+                                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Latest News Area -->
+        
+        <!-- Start Newsletter Area -->
+        <section class="newsletter-area ptb-100">
+            <div class="map-image">
+                <img src="{% static 'assets/img/map.png' %}" alt="map">
+            </div>
+            
+            <div class="container">
+                <div class="newsletter">
+                    <span>Get exclusive news & updates</span>
+                    <h3>Our newsletter</h3>
+                    <form>
+                        <input type="text" class="form-control" placeholder="Enter your email address">
+                        <button type="submit" class="subscribe-btn"><i class="icofont-envelope"></i> Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End Newsletter Area -->
+
+		<!-- jQuery Min JS -->
+		<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'assets/js/jquery.min.js' %}"></script>
+		<!-- Popper Min JS -->
+		<script src="{% static 'assets/js/popper.min.js' %}"></script>
+		<!-- Bootstrap Min JS -->
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<!-- Owl Carousel Min Js -->
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <!-- Magnific Popup JS -->
+        <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- MixitUp JS -->
+        <script src="{% static 'assets/js/jquery.mixitup.min.js' %}"></script>
+		<!-- Jquery Menu JS -->
+		<script src="{% static 'assets/js/jquery.meanmenu.js' %}"></script>
+		<!-- WoW JS -->
+		<script src="{% static 'assets/js/wow.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'assets/js/main.js' %}"></script>
+        {% endblock %}

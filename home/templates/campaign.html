@@ -1,0 +1,563 @@
+{% extends 'base.html' %}  
+{% block body %} 
+{% load static %}
+
+<style>.timeline-with-icons {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+  }
+  
+  .timeline-with-icons .timeline-item {
+    position: relative;
+  }
+  
+  .timeline-with-icons .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+  .timeline-with-icons .timeline-icon {
+    position: absolute;
+    left: -48px;
+    background-color: hsl(217, 88.2%, 90%);
+    color: hsl(217, 88.8%, 35.1%);
+    border-radius: 50%;
+    height: 31px;
+    width: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }</style>
+
+<style>
+
+    /* The actual timeline (the vertical ruler) */
+.main-timeline {
+    position: relative;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .main-timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #939597;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .timeline {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: #939597;
+    border: 5px solid #f5df4d;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -12px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .main-timeline::after {
+      left: 31px;
+    }
+  
+    /* Full-width containers */
+    .timeline {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+      left: 18px;
+    }
+  
+    .left::before {
+      right: auto;
+    }
+  
+    /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+</style>
+        <!-- Start Page Title Area -->
+        <div class="page-title">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <h3>Campaign Management</h3>
+                        
+                        <ul>
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li>/</li>
+                            <li>Campaign Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+        
+        <!-- Start Events Details Area -->
+        <section class="events-details-area ptb-100">
+            <div class="container">
+                <div class="row">
+                  {% for c in c %}
+					<div class="col-lg-12 col-md-12">
+						<div class="events-details">
+						    <div class="events-details-img owl-carousel owl-theme">
+						        <div class="item">
+						            <img src="/media/{{c.image}}" alt="news-details-img">
+						        </div>
+						        
+						        <!-- <div class="item">
+						            <img src="{% static 'assets/img/news-details-img1.jpg' %}" alt="news-details-img">
+						        </div> -->
+						    </div>
+							
+							<div class="events-details-desc">
+								<h4> <span style='color:red;'> A Brief Introduction </span> of Management
+                                </h4>
+
+                                <p>
+                                    {{c.desc}}
+
+                                </p>
+
+                                <!-- <p>We provide the best comprehensive election campaign
+                                   management for candidate.</p> -->
+								
+								
+								
+							</div>
+
+
+                            <div class="events-details-desc">
+								<h4> <span style='color:red;'>KEY FACTORS </span>
+                                </h4>
+
+                                <br>
+                                <!-- <h6> <span style='color:red;'>STRATEGY</span>
+                                    DEVELOPMENT -</h6>
+                                <p>
+                                    We give the best advice and winning strategies to our
+                                    candidate, with valuable inputs from our top experts of
+                                    different field to assist and guide you to win the
+                                    contest. To maintain candidates base and influence we
+                                    target floating voters by our skilful mind and callingmassaging management. We’ll research opponents
+                                    background and personal records to use it to wean away
+                                    opponent’s voters.
+
+                                </p>
+                                <br>
+                                <h6><span style='color:red;'>POLITICAL</span>
+                                    SURVEY -</h6>
+
+                                <p>In depth and complete survey of ant constituency. Later
+                                    we will analyse the data we collected and summarised
+                                    the mood of the voters.</p>
+								
+
+                                    <br>
+                                    <h6><span style='color:red;'>SOCIAL</span>
+                                        SURVEY</h6>
+    
+                                    <p>We will connect with the candidate’s locality to
+                                        understand the voter’s concern. Will convince them to
+                                        become the actual voter not a promise voter by
+                                        reassurance of development and reaching out for their
+                                        concern.</p>
+        
+                                        
+
+                                        <br>
+                                        <h6><span style='color:red;'>OPINION</span>
+                                            POLL -</h6>
+        
+                                        <p>It is very-very important to know which way voters are
+                                            leaning and for that opinion polls are an indispensable
+                                            tool. We have the expertise to use a sample size of not
+                                            more than a few hundred to predict a constituency.</p>
+                                                -->
+                                                {{c.key_factor|safe}}
+								
+							</div>
+							
+						
+						</div>
+					</div>
+					
+					{% endfor %}
+                </div>
+            </div>
+        </section>
+        <!-- End Events Details Area -->
+
+        <h2 style='text-align:center'> <span style='color:red;'> POLITICAL
+        </span> of Management
+    </h2>
+    <br>
+        <section style="background-color: #F0F2F5;">
+           
+            <div class="container py-5">
+              <div class="main-timeline">
+                <div class="timeline left">
+                  <div class="card">
+                    <div class="card-body p-4">
+                      <h3>2017</h3>
+                      <p class="mb-0">Campaign management and consulting</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline right">
+                  <div class="card">
+                    <div class="card-body p-4">
+                      <h3>2016</h3>
+                      <p class="mb-0">Advertisement creation/purchasing</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline left">
+                  <div class="card">
+                    <div class="card-body p-4">
+                      <h3>2015</h3>
+                      <p class="mb-0">Grassroot Politics</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline right">
+                  <div class="card">
+                    <div class="card-body p-4">
+                      <h3>2012</h3>
+                      <p class="mb-0">Opposition research</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline left">
+                  <div class="card">
+                    <div class="card-body p-4">
+                      <h3>2011</h3>
+                      <p class="mb-0">Lobbying</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline right">
+                  <div class="card">
+                    <div class="card-body p-4">
+                      <h3>2007</h3>
+                      <p class="mb-0">Fundraising</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline left">
+                    <div class="card">
+                      <div class="card-body p-4">
+                        <h3>2006</h3>
+                        <p class="mb-0">Polling</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+
+          <h2 style='text-align:center;margin-top:30px;'> <span style='color:red;'> Managing A Brand
+        </span> In Media
+    </h2>
+
+          <section class="about-area ptb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-image">
+                            <img src="{% static 'assets/img/about-img.jpg' %}" alt="image">
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <h2>A Brief Information Managing A Brand in Media</h2>
+
+                            <p>A candidate is afterall, a “BRAND” and need the same kind of attention and nourishing of their image. It is a non going, pro-active process that makes the candidate accept able to the broad estsegment of electorate possible. This is possible through skilful communication of ideas and making sure of that the message reaches its intended audience as soon as possible.</p>
+                            <br>
+                            <p>We have our disposal as an entire audio-visual studio and can make sure that your message never gets distorted.It would be presented in a manner that is interesting and make the electorate inquisitive. Above all this, the message must be on point and relevant to the to pic of the day or for a new cycle.</p>
+                            {% comment %} <a href="#" class="btn btn-primary">Join Us</a> {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+
+        <!-- Section: Timeline -->
+
+        <h2 style='text-align:center;margin-top:30px;'> <span style='color:red;'> Work Prefrences
+        </span> Area
+    </h2>
+    <br>
+<section class="py-5" style='margin-left:40px;'> 
+    <ul class="timeline-with-icons">
+      <li class="timeline-item mb-5">
+        <span class="timeline-icon">
+          <i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
+        </span>
+  
+        <h5 class="fw-bold">Event Managing</h5>
+        <br>
+        <p class="text-muted ">Stage</p>
+        <p class="text-muted">Chairs</p>
+        <p class="text-muted">Water</p>
+        <p class="text-muted">Photo and Vidio Grapher</p>
+        <p class="text-muted">Content for Speech</p>
+      </li>
+  
+      <li class="timeline-item mb-5">
+  
+        <span class="timeline-icon">
+          <i class="fas fa-hand-holding-usd text-primary fa-sm fa-fw"></i>
+        </span>
+        <h5 class="fw-bold">Direct Influence</h5>
+        <br>
+        <p class="text-muted ">Big Political Rallies</p>
+        <p class="text-muted">Pad Yatra in your ward and Gully Area</p>
+        <p class="text-muted">Door to Door Campaign by the Candidate</p>
+        <p class="text-muted">Posters, pamphlets, Hording work area of the party</p>
+      </li>
+  
+      <li class="timeline-item mb-5">
+  
+        <span class="timeline-icon">
+          <i class="fas fa-users text-primary fa-sm fa-fw"></i>
+        </span>
+        <h5 class="fw-bold">Direct Influence</h5>
+        <br>
+        <p class="text-muted ">SEO</p>
+        <p class="text-muted">Social Media(Facebook,Instagram,Youtube,Twitter)</p>
+        <p class="text-muted">Target audience reach</p>
+        <p class="text-muted">Short Vidio Creation</p>
+        <p class="text-muted">Digital Content Spreading(Posters of directions candidate party work and next term manifesto)</p>
+        <p class="text-muted">Audio Message Call</p>
+        <p class="text-muted">Text Message </p>
+        <p class="text-muted">Call Center Setup</p>
+        <p class="text-muted">Graphical representation of every field and area, party and candidate feedback strength and weakness</p>
+       
+      </li>
+  
+      <li class="timeline-item mb-5">
+  
+        <span class="timeline-icon">
+          <i class="fas fa-money-bill-wave text-primary fa-sm fa-fw"></i>
+        </span>
+        <h5 class="fw-bold">SATIRICAL INFLUENCE(CONTENT WRITING AND SLOGAN WRITING)</h5>
+        <br>
+        <p class="text-muted ">Door to door Campion by our Team for getting feedback and pitching for a particular candidate Licensing</p>
+        <p class="text-muted">
+            Meeting with Different community leaders and members.
+        </p>
+        <p class="text-muted">Solutions based on area feedback(meeting with particular Gully and person)</p>
+        <p class="text-muted">Our team will pick Volunteers for every Gully</p>
+        <p class="text-muted">Based on different feedback will take the candidate to a particular area for promising to the wellness of people of that area</p>
+      </li>
+    </ul>
+  </section>
+  <!-- Section: Timeline -->
+
+<section class="mission-area ptb-100">
+    <div class="container">
+        <div class="section-title">
+            <h2> <span style='color:red'> Companies  </span> Agenda</h2>
+            
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-xl-12">
+                <div class="single-mission">
+                    
+                  
+                  <p style='text-align:left'><span>1. </span> A good politician walks in to any speech knowing what they want to tell
+                    their audience before they say a single word. A company needs to know
+                    what take - away they want their customers, prospects and employees to
+                    remember and feel before any action they take. The public relations
+                    strategy and wording used needs to mirror the intended take - away </p>
+                  <p style='text-align:left'><span>2. </span> Be consistent. It's hard to trust a flip - flopper, so repeat the same message
+                    as often as possible. Only then will people hear it and remember it
+                     </p>
+                  <p style='text-align:left'><span>3. </span> Own it. In the rare cases where you must do a flip - flop, own it. Explain why
+                    the change was the right thing to do. People are more than willing to forgive
+                    a mistake, but only if you own it and don't hide it.</p>
+                  <p style='text-align:left'><span>4. </span> There's a lot more we learned working in politics which I credit to how we
+                    create strong, effective PR campaigns for our clients. </p>
+                 
+                </div>
+            </div>
+
+</section>
+<!-- Our Team -->
+<section class="mission-area ptb-100" style="padding-top:0px;">
+  <div class="container">
+      <div class="section-title">
+     <a href="{% url 'team' %}">     <h2> <span style='color:red'> Our Team Of  </span> EXPERTS</h2></a>
+             </p>
+      </div>
+      
+      <div class="row" style="padding-top: 0px;">
+          <div class="col-md-12 col-lg-12 col-xl-12">
+              <div class="single-mission">
+                  
+                
+               <p style='text-align:left'>The core team is formed with the
+                  people who are PRO in their fields,
+                  where no one can match their minds.
+                  Such as Marketing Researcher, Digital
+                  Marketing, Statisticians, Journalist,
+                  Social Survey Expert, Social Media
+                  Expert, PR expert and Management
+                  experts. They have studied from the
+                  most Reputed Educational Institute of
+                  India. They bring the best their minds
+                  to prepare a game changing plan to
+                  increase the chance of winning of any
+                  political party.
+                  </p>
+                  <br>
+                  <p style='text-align:left'>We conduct a proper deep Research
+                      and Survey to understand the voting
+                      tendencies through the date we
+                      collected at the ground level. We bring
+                      out the voter’s mood and opinion
+                      through some Social Experiments.</p>
+                      <br> 
+                  <p style='text-align:left'>We provide irrefutable research and
+                      analysis on public policy. We will
+                      provide accurate and impartial
+                      forecast that will facilitate and
+                      political candidate and party.
+                      </p>    
+              </div>
+          </div>
+
+</section>
+
+
+<!-- Start Upcoming Campaigns -->
+<section class="campaigns-area ptb-100">
+  <div class="container">
+      <div class="row">
+          {% for t in data  %}
+     
+          <div class="col-lg-4 col-md-6">
+              <div class="campaignsBox">
+                  <div class="campaigns-img">
+                      <img src="/media/{{t.img}}" alt="campaign">
+                      
+                      {% comment %} <div class="date">
+                          <span>31</span>
+                          Dec, 2021
+                      </div> {% endcomment %}
+                  </div>
+                  
+                  <div class="campaigns-content">
+                      <h3>{{t.name}}</h3>
+                      {% comment %} <span><i class="icofont-google-map"></i> Tokyo, Japan</span> {% endcomment %}
+                  <p>{{t.designation}}</p>
+                  </div>
+              </div>
+          </div>
+               
+          {% endfor %}
+          </div>
+          </div>
+          </section>
+
+        
+			<!-- jQuery Min JS -->
+		<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'assets/js/jquery.min.js' %}"></script>
+		<!-- Popper Min JS -->
+		<script src="{% static 'assets/js/popper.min.js' %}"></script>
+		<!-- Bootstrap Min JS -->
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<!-- Owl Carousel Min Js -->
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <!-- Magnific Popup JS -->
+        <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- MixitUp JS -->
+        <script src="{% static 'assets/js/jquery.mixitup.min.js' %}"></script>
+		<!-- Jquery Menu JS -->
+		<script src="{% static 'assets/js/jquery.meanmenu.js' %}"></script>
+		<!-- WoW JS -->
+		<script src="{% static 'assets/js/wow.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'assets/js/main.js' %}"></script>
+       {% endblock %}

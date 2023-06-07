@@ -1,0 +1,195 @@
+  {% extends 'base.html' %}  
+     {% block body %} 
+     {% load static %}        
+        <!-- Start Page Title Area -->
+        <div class="page-title">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <h3>Blog</h3>
+                        
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>/</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+        
+        <!-- Start News Area -->
+        <section class="news-area ptb-100">
+            <div class="container">
+                <div class="row">
+					<div class="col-lg-8 col-md-12">
+						<div class="row">
+							{% for i in data  %}
+							
+						
+							<div class="col-lg-6 col-md-6">
+								<div class="single-blog-post">
+									<a href="{% url 'blogdetail'  i.id %}"><img src="/media/{{i.img}}" alt="blog"></a>
+									
+									<div class="blog-content">
+										<h4><a href="#">{{i.title}}</a></h4>
+										<p><a href="#">{{i.desc}}</a></p>
+										
+										<ul class="post-meta">
+											<li><a href="#"><i class="icofont-clock-time"></i> {{i.date}}</a></li>
+											<li><a href="#"><i class="icofont-comment"></i> 15</a></li>
+										</ul>
+										
+										<ul class="share-social">
+											<li><a href="#"><i class="icofont-share"></i></a>
+												<ul class="social-dropdown">
+													<li><a href="https://www.facebook.com/"><i class="icofont-facebook"></i></a></li>
+													<li><a href="https://twitter.com/"><i class="icofont-twitter"></i></a></li>
+													<li><a href="https://www.instagram.com/"><i class="icofont-instagram"></i></a></li>
+													<li><a href="https://www.linkedin.com/"><i class="icofont-linkedin"></i></a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							{% endfor %}
+						
+							
+	
+							
+							<div class="col-lg-12 col-md-12">
+								<div class="pagination-area">
+									<nav aria-label="Page navigation example">
+										<ul class="pagination justify-content-center">
+										   
+											<li class="page-item"><a class="page-link" href="#"><i class="icofont-double-left"></i></a></li>
+											
+											<li class="page-item active"><a class="page-link" href="#">1</a></li>
+											
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											
+											<li class="page-item"><a class="page-link" href="#"><i class="icofont-double-right"></i></a></li>
+											
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-12">
+						<div class="side-bar mb-0">
+						    <div class="widget-box search-box">
+						        <h4 class="title">Search</h4>
+						        
+						        <form method="post" action="{% url 'search' %}">
+									{% csrf_token %}
+						            <input type="text" class="form-control" placeholder="Search here...." name="search">
+						            <button type="submit"><i class="icofont-search-1"></i></button>
+						        </form>
+						    </div>
+						    
+						    <div class="widget-box latest-post">
+						        <h4 class="title">Latest Post</h4>
+						        
+						        <div class="single-latest-post">
+						            <div class="img">
+						                <a href="#"><img src="{% static 'assets/img/blog-img1.jpg' %}" alt="blog"></a>
+						            </div>
+						            
+						            <div class="content">
+						                <h4><a href="#">New laws deliver a fairer and more sustainable</a></h4>
+						                
+						                <span><i class="icofont-calendar"></i> 31 December 2021</span>
+						            </div>
+						        </div>
+						        
+						        <div class="single-latest-post">
+						            <div class="img">
+						                <a href="#"><img src="{% static 'assets/img/blog-img2.jpg' %}" alt="blog"></a>
+						            </div>
+						            
+						            <div class="content">
+						                <h4><a href="#">New laws deliver a fairer and more sustainable</a></h4>
+						                
+						                <span><i class="icofont-calendar"></i> 31 December 2021</span>
+						            </div>
+						        </div>
+						        
+						        <div class="single-latest-post mb-0">
+						            <div class="img">
+						                <a href="#"><img src="{% static 'assets/img/blog-img3.jpg' %}" alt="blog"></a>
+						            </div>
+						            
+						            <div class="content">
+						                <h4><a href="#">New laws deliver a fairer and more sustainable</a></h4>
+						                
+						                <span><i class="icofont-calendar"></i> 31 December 2021</span>
+						            </div>
+						        </div>
+						    </div>
+						    
+						    <div class="widget-box categories-box">
+						        <h4 class="title">Categories</h4>
+						        
+						        <ul>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Economy</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Education</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Donate</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> News</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Free</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Life</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Energy</a></li>
+						        </ul>
+						    </div>
+						    
+						    <div class="widget-box tag-box">
+						        <h4 class="title">Popular Tags</h4>
+						        
+						        <ul>
+						            <li><a href="#">Economy</a></li>
+						            <li><a href="#">Education</a></li>
+						            <li><a href="#">Donate</a></li>
+						            <li><a href="#">News</a></li>
+						            <li><a href="#">Free</a></li>
+						            <li><a href="#">Life</a></li>
+						            <li><a href="#">Energy</a></li>
+						        </ul>
+						    </div>
+						    
+						    <div class="widget-box text-box mb-0">
+						        <h4 class="title">Text Widget</h4>
+						        
+						        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard ever.</p>
+						    </div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </section>
+        <!-- End News Area -->
+        
+		<!-- jQuery Min JS -->
+		<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'assets/js/jquery.min.js' %}"></script>
+		<!-- Popper Min JS -->
+		<script src="{% static 'assets/js/popper.min.js' %}"></script>
+		<!-- Bootstrap Min JS -->
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<!-- Owl Carousel Min Js -->
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <!-- Magnific Popup JS -->
+        <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- MixitUp JS -->
+        <script src="{% static 'assets/js/jquery.mixitup.min.js' %}"></script>
+		<!-- Jquery Menu JS -->
+		<script src="{% static 'assets/js/jquery.meanmenu.js' %}"></script>
+		<!-- WoW JS -->
+		<script src="{% static 'assets/js/wow.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'assets/js/main.js' %}"></script>
+       {% endblock %}

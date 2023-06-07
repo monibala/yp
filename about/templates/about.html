@@ -1,0 +1,506 @@
+{% extends 'base.html' %}  
+{% block body %} 
+{% load static %}  
+      <!-- Start Page Title Area -->
+        <div class="page-title">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <h3>About Us</h3>
+                        
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>/</li>
+                            <li>About Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+        
+        <!-- Start About Area -->
+        <section class="about-area ptb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-image">
+                            <img src="{% static 'assets/img/about-img.jpg' %}" alt="image">
+                        </div>
+                    </div>
+                    {% for ab in ab %}
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <h2>About us</h2>
+                            <!-- <p>IF YOU ARE PREPARING FOR THE ELECTION, THEN STOP IT</p>
+                     
+                            <p>Political Survey and Political information technology drives all we do.</p>
+        
+                            <p>Electioncare uses Political survey and political information technology to change voter behavior. Visit our Political survey or Political information technology divisions to see how we can help you.</p>
+                            
+                            <p>The electoral battles are not only fought with development and politics alone, but with statistical analysis knowledge of voting Trends anda deep understanding of key and swing constituencies.but here we assure youth atthisis possible with statistical analysis of the data collected by more than 150 survey executives located in various cities a cross India.</p>
+                            <p>we are dedicated professionals, who works on deep research of you and the position of your party in lok sabha and vidhana sabha constituency in your state. so that we can plan accordingly to help candidate to win the election on the basis of our strategies and election management.</p> -->
+                          <p> {{ab.description | safe}}</p>
+                            <a href="#" class="btn btn-primary">Join Us</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% for ab in ab %}
+                <div class="row mt-100">
+                    <div class="col-lg-4">
+                        <div class="about-box">
+                            <i class="icofont-diamond"></i>
+                            <h3>Who we are</h3>
+                            <p>{{ab.who_We_are|safe}}</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="about-box">
+                            <i class="icofont-diamond"></i>
+                            <h3>What we do</h3>
+                            <p>{{ab.what_we_do|safe}}</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="about-box">
+                            <i class="icofont-diamond"></i>
+                            <h3>Why ChooseUs</h3>
+                            <p>{{ab.why_choose|safe}}</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endfor %}
+        <!-- End About Area -->
+        
+        <!-- Start Support Area -->
+        <section class="support-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="support-content">
+                            <h3>Your political <span>support</span> make bigest help for big history</h3>
+                            <p>A good politicians acknowledge the flaws and a good campaign management team Will know how to prepare a plan in advance to reponse future attacks, with top of that we will work to turn that perceived negative into positive by building your image.</p>
+                            <a href="#" class="btn btn-secondary">Contact Us</a>
+                            <a href="#" class="btn btn-primary">Donate Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="support-image wow fadeInUp">
+                            <img src="{% static 'assets/img/shouting.png' %}" alt="shouting">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Support Area -->
+        
+        <!-- Start Our Mission Area -->
+      
+        <section class="mission-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <h2> <span style='color:red'> Our  </span> Mission</h2>
+                    <!-- <p>Our media management support goes far beyond writing speeches. 
+                       </p> -->
+                </div>
+                {% for ab in ab %}
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-12">
+                        <div class="single-mission">
+                            
+                         
+                          <!-- <p style='text-align:left'><span>1. </span> It's important to know what you want people to remember before you start
+                            talking. </p>
+                          <p style='text-align:left'><span>2. </span> A good politician walks in to any speech knowing what they want to tell
+                            their audience before they say a single word. A company needs to know
+                            what take - away they want their customers, prospects and employees to
+                            remember and feel before any action they take. The public relations
+                            strategy and wording used needs to mirror the intended take - away.
+                             </p>
+                          <p style='text-align:left'><span>3. </span> Be consistent. It's hard to trust a flip - flopper, so repeat the same message
+                            as often as possible. Only then will people hear it and remember it</p>
+                          <p style='text-align:left'><span>4. </span> Own it. In the rare cases where you must do a flip - flop, own it. Explain why
+                            the change was the right thing to do. People are more than willing to forgive
+                            a mistake, but only if you own it and don't hide it </p>
+                          <p style='text-align:left'><span>5. </span> There's a lot more we learned working in politics which I credit to how we
+                            create strong, effective PR campaigns for our clients </p>
+
+                            <p style='text-align:left'><span>6. </span> We strive to ensure that. That the popularity of the candidates continued to grow in the right direction through the hard work of our team and innovative technologists and skilled politicians. </p>   -->
+                        
+                         {{ab.mission|safe}}
+                         
+                        </div>
+                    </div>
+                    {% endfor %}
+        </section>
+        <!-- End Our Mission Area -->
+        
+        <!-- Start FunFacts Area -->
+        <section class="funfacts-area">
+            <div class="map-image">
+                <img src="{% static 'assets/img/map.png' %}" alt="map">
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="funFact top-line">
+                            <h3><span class="count">25898</span>+</h3>
+                            <p>Total members</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3">
+                        <div class="funFact bottom-line">
+                            <h3><span class="count">45787</span>+</h3>
+                            <p>Total donations</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3">
+                        <div class="funFact top-line">
+                            <h3><span class="count">78452</span>+</h3>
+                            <p>Total campaigns</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3">
+                        <div class="funFact bottom-line">
+                            <h3><span class="count">45898</span>+</h3>
+                            <p>Our achievements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End FunFacts Area -->
+        
+        <!-- Start History CSS -->
+        <section class="history-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Political history</h2>
+                    <p>Elections Win Let’s Change History </p>
+                </div>
+                
+                <div class="row">
+                    <div class="history-timeline">
+                        <div class="single-history">
+                            <div class="history-content left-side">
+                                <h3>01</h3>
+                                <h4>1750-1800</h4>
+                                <p>Election Care best Political Consulting & Political Campaign Services firm in India. Help you boost up your image & reputation using the Voters. We are the Best political consulting firm in India. We make Visible you on multiple channels connections and resources.</p>
+                            </div>
+                            
+                            <div class="history-image">
+                                <img src="{% static 'assets/img/history-img1.jpg' %}" alt="history">
+                            </div>
+                        </div>
+                        
+                        <div class="single-history">
+                            <div class="history-content right-side">
+                                <h3>02</h3>
+                                <h4>1800-1850</h4>
+                                <p>We Deliver Public Leader & Party Menifesto or Voice to more peoples to aware them. So Join best political campaign management agency of india. We have professional & skilled staff. election care have Good experience in political management in India.  We helped many national & state level leaders to convey their message & Campaign in society through political campaign India.</p>
+                            </div>
+                            
+                            <div class="history-image">
+                                <img src="{% static 'assets/img/history-img2.jpg' %}" alt="history">
+                            </div>
+                        </div>
+                        
+                        <div class="single-history">
+                            <div class="history-content left-side">
+                                <h3>03</h3>
+                                <h4>1850-1900</h4>
+                                <p>Election Care Services are Digital Base. With Seasoned strategist and the best creative mind in the Political  and IT services, We have the right team to get the good things done</p>
+                            </div>
+                            
+                            <div class="history-image">
+                                <img src="{% static 'assets/img/history-img3.jpg' %}" alt="history">
+                            </div>
+                        </div>
+                        
+                        <div class="single-history">
+                            <div class="history-content right-side">
+                                <h3>04</h3>
+                                <h4>1900-2000</h4>
+                                <p>Political history is the narrative and survey of political events, ideas, movements, organs of government, voters, parties and leaders.[1] It is closely related to other fields of history, including diplomatic history, constitutional history, social history, people's history, and public history. Political history studies the organization and operation of power in large societies.</p>
+                            </div>
+                            
+                            <div class="history-image">
+                                <img src="{% static 'assets/img/history-img4.jpg' %}" alt="history">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End History CSS -->
+        
+        <!-- Start Achievement Area -->
+        <section class="achievement-area ptb-100">
+            <div class="overlay"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-4">
+                        <div class="video text-center">
+                            <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="video-play-btn popup-video">
+                                <i class="icofont-ui-play"></i>
+                                <span class="ripple"></span>
+                                <span class="ripple"></span>
+                                <span class="ripple"></span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-8">
+                        <div class="achievement-content">
+                            <div class="section-title">
+                                <h2>Our achievement</h2>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="achievement-slides owl-carousel owl-theme">
+                                    <div class="col-lg-12">
+                                        <div class="item">
+                                            <p>In this short period of six years, the advances of the Menzies period were consolidated. The Liberal governments moved ahead in the areas of traditional Liberal concern – health, education and welfare. The period is significant for a number of reasons, including foreign policy and defence initiatives, commitment to the aboriginal people and involvement with the rapidly changing world of technology, energy conservation and the environment.</p>
+
+                                            <h4>MacMahon Era (1966-1972)</h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12">
+                                        <div class="item">
+                                            <p>The Liberal governments moved ahead in the areas of traditional Liberal concern – health, education and welfare. The period is significant for a number of reasons, including foreign policy and defence initiatives, commitment to the aboriginal people and involvement with the rapidly changing world of technology, energy conservation and the environment. In this short period of six years, the advances of the Menzies period were consolidated.</p>
+
+                                            <h4>John Era (1966-1972)</h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-12">
+                                        <div class="item">
+                                            <p>In this short period of six years, the advances of the Menzies period were consolidated. The Liberal governments moved ahead in the areas of traditional Liberal concern – health, education and welfare. The period is significant for a number of reasons, including foreign policy and defence initiatives, commitment to the aboriginal people and involvement with the rapidly changing world of technology, energy conservation and the environment.</p>
+
+                                            <h4>Steven Era (1966-1972)</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Achievement Area -->
+        
+        <!-- Start Volunteer Area -->
+        <section class="volunteer-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our volunteers</h2>
+                    <p>If you are interested in a career in politics or public service, volunteering for a political campaign is a great way to gain experience.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="team-slides owl-carousel carousel_se_02_carousel owl-theme">
+                        {% for v in v %}
+                        <div class="col-lg-12 col-md-12" style="padding-right: 15px;">
+                            <div class="single-team">
+                                <img src="/media/{{v.image}}" alt="team" style="height:250px;">
+                                
+                                <div class="team-content">
+                                    <h4>{{v.name}}</h4>
+                                    <span>{{v.designation}}</span>
+                                    
+                                    <ul>
+                                        <li><a href="#"><i class="icofont-share"></i></a>
+                                            <ul class="social-dropdown">
+                                                <li><a href="{{v.fb_link}}"><i class="icofont-facebook"></i></a></li>
+                                                <li><a href="{{v.tw_link}}"><i class="icofont-twitter"></i></a></li>
+                                                <li><a href="{{v.ins_link}}"><i class="icofont-instagram"></i></a></li>
+                                                <li><a href="{{v.ln_link}}"><i class="icofont-linkedin"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% comment %}
+                        <div class="col-lg-12 col-md-12" style="padding-right: 15px;">
+                            <div class="single-team">
+                                <img src="{% static 'assets/img/team-img2.jpg' %}" alt="team">
+                                
+                                <div class="team-content">
+                                    <h4>Alex Maxwel</h4>
+                                    <span>CEO & President</span>
+                                    
+                                    <ul>
+                                        <li><a href="#"><i class="icofont-share"></i></a>
+                                            <ul class="social-dropdown">
+                                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12" style="padding-right: 15px;">
+                            <div class="single-team">
+                                <img src="{% static 'assets/img/team-img3.jpg' %}" alt="team">
+                                
+                                <div class="team-content">
+                                    <h4>Alex Maxwel</h4>
+                                    <span>CEO & President</span>
+                                    
+                                    <ul>
+                                        <li><a href="#"><i class="icofont-share"></i></a>
+                                            <ul class="social-dropdown">
+                                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12" style="padding-right: 15px;">
+                            <div class="single-team">
+                                <img src="{% static 'assets/img/team-img4.jpg' %}" alt="team">
+                                
+                                <div class="team-content">
+                                    <h4>Alex Maxwel</h4>
+                                    <span>CEO & President</span>
+                                    
+                                    <ul>
+                                        <li><a href="#"><i class="icofont-share"></i></a>
+                                            <ul class="social-dropdown">
+                                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Volunteer Area -->
+        
+        <!-- Start Testimonials Area -->
+        <section class="testimonials-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <h2>Feedback</h2>
+                        
+                        <div class="feedback-slides owl-carousel carousel_se_01_carousel owl-theme">
+                            <div class="item">
+                                <p>Our core team comprises of season edveterans from various fields -Market research, statistics and newsmedia. They together bring several decades of accumulated expertise about every corner of this vast country that is unrivalled and improves the chances of any political party and its candidates considerably.</p>
+                                <i class="icofont-quote-left"></i>
+                                
+                                <div class="client-info">
+                                    <img src="{% static 'assets/img/avator-1.png' %}" alt="avator">
+                                    
+                                    <h4>Ashlegh Gardner</h4>
+                                    <span>Founder & CEO, AWS Tech</span>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <p>Electoral battles are no longer fought with development and politics alone but also with statistical analysis of voting trends. It is no longer possible to win base donrhetoric.</p>
+                                <i class="icofont-quote-left"></i>
+                                
+                                <div class="client-info">
+                                    <img src="{% static 'assets/img/avator-1.png' %}" alt="avator">
+                                    
+                                    <h4>Ashlegh Gardner</h4>
+                                    <span>Founder & CEO, AWS Tech</span>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <p>Campaigns must be based on sound decisions driven by facts from the ground level. We enable electoral success by telling you what is the reinvoter's mind.</p>
+                                <i class="icofont-quote-left"></i>
+                                
+                                <div class="client-info">
+                                    <img src="{% static 'assets/img/avator-1.png' %}" alt="avator">
+                                    
+                                    <h4>Ashlegh Gardner</h4>
+                                    <span>Founder & CEO, AWS Tech</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="feedback-image wow fadeInUp">
+                            <img src="{% static 'assets/img/feedback-man.png' %}" alt="feedback">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials Area -->
+        
+        <!-- Start Newsletter Area -->
+        <section class="newsletter-area ptb-100">
+            <div class="map-image">
+                <img src="{% static 'assets/img/map.png' %}" alt="map">
+            </div>
+            
+            <div class="container">
+                <div class="newsletter">
+                    <span>Get exclusive news & updates</span>
+                    <h3>Our newsletter</h3>
+                    <form>
+                        <input type="text" class="form-control" placeholder="Enter your email address">
+                        <button type="submit" class="subscribe-btn"><i class="icofont-envelope"></i> Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End Newsletter Area -->
+        
+		<!-- jQuery Min JS -->
+		<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'assets/js/jquery.min.js' %}"></script>
+		<!-- Popper Min JS -->
+		<script src="{% static 'assets/js/popper.min.js' %}"></script>
+		<!-- Bootstrap Min JS -->
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<!-- Owl Carousel Min Js -->
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <!-- Magnific Popup JS -->
+        <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- MixitUp JS -->
+        <script src="{% static 'assets/js/jquery.mixitup.min.js' %}"></script>
+		<!-- Jquery Menu JS -->
+		<script src="{% static 'assets/js/jquery.meanmenu.js' %}"></script>
+		<!-- WoW JS -->
+		<script src="{% static 'assets/js/wow.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'assets/js/main.js' %}"></script>
+        
+        {% endblock %}

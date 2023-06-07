@@ -1,0 +1,91 @@
+{% load static %}
+{% load custumfilter %}
+<nav>
+    <ul class="metismenu" id="menu">
+    {% url "dashboardindex" as dashboardurl %}
+        <!-- <li class="{% if request.path == dashboardurl %}active{% endif %}">
+            <a href="" aria-expanded="true">
+                <i class="ti-dashboard"></i>
+                <span>dashboard</span>
+            </a>
+        </li> -->
+        {% with ''|sidebardata as modelslist %}
+        {% for key,val in modelslist.items %}
+        {% url "showapp" key as showappurl %}
+        <li class="main_dropdown {% if showappurl in request.path %}active{% endif %}">
+            <a href="{{showappurl}}" aria-expanded="true"><i class="ti-user"></i>
+                <span>{{key|cemelcase}}</span> <span class="badge">{{val|length}}</span></a>
+            <ul class="collapse">
+            {% for da in val %}
+                {% url 'showdatamodel' key da as showdatamodelurl %}
+                <li class="{% if showdatamodelurl == request.path %}active{% endif %}"><a href="{{showdatamodelurl}}">{{da|cemelcase}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+        {% endwith %}
+        {% comment %} <li class="main_dropdown
+                            ">
+            <a href=" {% static 'javascript:void(0)' %} " aria-expanded="true"><i class="ti-user"></i>
+                <span>Users</span> <span class="badge">{{allusers.count}}</span></a>
+            <ul class="collapse">
+                <li class=""><a href="  ">All Users </a>
+                </li>
+                <li class=""><a href="  ">Add New
+                        User</a></li>
+            </ul>
+        </li>
+        <li class="main_dropdown
+                            ">
+            <a href="#" aria-expanded="true"><i class="ti-book"></i>
+                <span>Test Drive Bookings</span><span class="badge">{{allbookings.count}}</span></a>
+            <ul class="collapse">
+                <li class=""><a href="  ">All Booking </a>
+                </li>
+                <li class=""><a href="   ">Add New
+                        Booking</a></li>
+            </ul>
+        </li>
+        <li class="main_dropdown
+                            ">
+            <a href="#" aria-expanded="true"><i class="ti-book"></i>
+                <span>Orders</span><span class="badge">{{allorders.count}}</span></a>
+            <ul class="collapse">
+                <li class=""><a href="  ">All Orders </a>
+                </li>
+                <li class=""><a href="   ">Add New
+                        Order</a></li>
+            </ul>
+        </li>
+        <li class="main_dropdown
+                            ">
+            <a href="#" aria-expanded="true"><i class="ti-book"></i>
+                <span>Contacts</span><span class="badge">{{allContact.count}}</span></a>
+            <ul class="collapse">
+                <li class=""><a href="  ">All Contacts </a>
+                </li>
+                <li class=""><a href="  ">Add New
+                        Contact</a></li>
+            </ul>
+        </li>
+
+
+        <li class="main_dropdown
+                            ">
+            <a href="  " aria-expanded="true"><i class="ti-files"></i>
+                <span>About</span></a>
+
+        </li>
+
+        <li class="main_dropdown
+                            ">
+            <a href="  " aria-expanded="true"><i class="ti-files"></i>
+                <span>Info</span></a>
+
+        </li>
+        </li> {% endcomment %}
+
+
+    </ul>
+</nav>

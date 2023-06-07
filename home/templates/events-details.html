@@ -1,0 +1,203 @@
+{% extends 'base.html' %}  
+{% block body %} 
+{% load static %}
+        <!-- Start Page Title Area -->
+        <div class="page-title">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <h3>Events Details</h3>
+                        
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>/</li>
+                            <li>Events Details</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+        
+        <!-- Start Events Details Area -->
+        <section class="events-details-area ptb-100">
+            <div class="container">
+                <div class="row">
+					<div class="col-lg-8 col-md-12">
+						<div class="events-details">
+						    <div class="events-details-img owl-carousel owl-theme">
+						        <div class="item">
+						            <img src="/media/{{e.image}}" alt="news-details-img">
+						        </div>
+						        
+						        <div class="item">
+						            <img src="/media/{{e.image}}" alt="news-details-img">
+						        </div>
+						    </div>
+							
+							<div class="events-details-desc">
+								<h4>{{e.event_name}}</h4>
+								
+								<p>{{e.description}}</p>
+								
+								<a href="#" class="google-calendar">+ Google Calendar</a>
+								
+								<div class="row">
+									<div class="col-lg-4 col-md-12">
+										<div class="events-details-box">
+											<h4>Details</h4>
+											
+											<ul>
+												<li><b>Date:</b> {{e.date}}</li>
+												<li><b>Time:</b>{{e.time}}</li>
+												<li><b>Cost:</b> {{e.cost}}</li>
+												<li><b>Website:</b> <a href="#">{{e.website}}</a></li>
+											</ul>
+										</div>
+									</div>
+									
+									<div class="col-lg-4 col-md-12">
+										<div class="events-details-box">
+											<h4>Organizer</h4>
+											
+											<span>Best Event Makers</span>
+											<ul>
+												<li><b>Phone:</b> <a href="#">+{{e.mobile}}</a></li>
+												<li><b>Email:</b> <a href="#"><span class="__cf_email__" data-cfemail="ff96919990bfb486939ab7908f9ad19c9092">{{e.email}}</span></a></li>
+												<li><b>Website:</b> <a href="#">{{e.website}}</a></li>
+											</ul>
+										</div>
+									</div>
+									
+									<div class="col-lg-4 col-md-12">
+										<div class="events-details-box">
+											<h4>Venue</h4>
+											
+											<p>{{e.loacation}} <br> <a href="https://www.google.com/maps/place/Topaz+Park/@48.4438744,-123.36609,17z/data=!3m1!4b1!4m5!3m4!1s0x548f7383a15c9fff:0x1e42c7e630d91c87!8m2!3d48.4438744!4d-123.3639013?hl=en-US" target="_blank">+ Google Map</a></p>
+											<ul>
+												<li><b>Phone:</b> <a href="#">+{{e.mobile}}</a></li>
+												<li><b>Website:</b> <a href="#">{{e.website}}</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Map -->
+							<div id="map">
+								<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.8158792277713!2d-123.36243578415748!3d48.44087343796659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f7381102ff519%3A0xc03e5586418eb3f2!2s2750%20Quadra%20St%2C%20Victoria%2C%20BC%20V8T%204E8%2C%20Canada!5e0!3m2!1sen!2sbd!4v1620453567663!5m2!1sen!2sbd"></iframe> -->
+								<iframe src="https://maps.google.com/maps?q={{e.loacation}}&z=15&output=embed"></iframe>
+							</div>
+							<!-- Map -->
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-12">
+						<div class="side-bar mb-0">
+						    <div class="widget-box search-box">
+						        <h4 class="title">Search</h4>
+						        
+						        <form>
+						            <input type="text" class="form-control" placeholder="Search here....">
+						            <button type="submit"><i class="icofont-search-1"></i></button>
+						        </form>
+						    </div>
+						    
+						    <div class="widget-box latest-post">
+						        <h4 class="title">Latest Post</h4>
+						        
+						        <div class="single-latest-post">
+						            <div class="img">
+						                <a href="#"><img src="{% static 'assets/img/blog-img1.jpg' %}" alt="blog"></a>
+						            </div>
+						            
+						            <div class="content">
+						                <h4><a href="#">New laws deliver a fairer and more sustainable</a></h4>
+						                
+						                <span><i class="icofont-calendar"></i> 31 December 2021</span>
+						            </div>
+						        </div>
+						        
+						        <div class="single-latest-post">
+						            <div class="img">
+						                <a href="#"><img src="{% static 'assets/img/blog-img2.jpg' %}" alt="blog"></a>
+						            </div>
+						            
+						            <div class="content">
+						                <h4><a href="#">New laws deliver a fairer and more sustainable</a></h4>
+						                
+						                <span><i class="icofont-calendar"></i> 31 December 2021</span>
+						            </div>
+						        </div>
+						        
+						        <div class="single-latest-post mb-0">
+						            <div class="img">
+						                <a href="#"><img src="{% static 'assets/img/blog-img3.jpg' %}" alt="blog"></a>
+						            </div>
+						            
+						            <div class="content">
+						                <h4><a href="#">New laws deliver a fairer and more sustainable</a></h4>
+						                
+						                <span><i class="icofont-calendar"></i> 31 December 2021</span>
+						            </div>
+						        </div>
+						    </div>
+						    
+						    <div class="widget-box categories-box">
+						        <h4 class="title">Categories</h4>
+						        
+						        <ul>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Economy</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Education</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Donate</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> News</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Free</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Life</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Energy</a></li>
+						        </ul>
+						    </div>
+						    
+						    <div class="widget-box tag-box">
+						        <h4 class="title">Popular Tags</h4>
+						        
+						        <ul>
+						            <li><a href="#">Economy</a></li>
+						            <li><a href="#">Education</a></li>
+						            <li><a href="#">Donate</a></li>
+						            <li><a href="#">News</a></li>
+						            <li><a href="#">Free</a></li>
+						            <li><a href="#">Life</a></li>
+						            <li><a href="#">Energy</a></li>
+						        </ul>
+						    </div>
+						    
+						    <div class="widget-box text-box mb-0">
+						        <h4 class="title">Text Widget</h4>
+						        
+						        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard ever.</p>
+						    </div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </section>
+        <!-- End Events Details Area -->
+		
+		<!-- jQuery Min JS -->
+		<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'assets/js/jquery.min.js' %}"></script>
+		<!-- Popper Min JS -->
+		<script src="{% static 'assets/js/popper.min.js' %}"></script>
+		<!-- Bootstrap Min JS -->
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<!-- Owl Carousel Min Js -->
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <!-- Magnific Popup JS -->
+        <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- MixitUp JS -->
+        <script src="{% static 'assets/js/jquery.mixitup.min.js' %}"></script>
+		<!-- Jquery Menu JS -->
+		<script src="{% static 'assets/js/jquery.meanmenu.js' %}"></script>
+		<!-- WoW JS -->
+		<script src="{% static 'assets/js/wow.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'assets/js/main.js' %}"></script>
+       {% endblock %}

@@ -1,0 +1,278 @@
+{% extends 'base.html' %}  
+{% block body %} 
+{% load static %}
+        <!-- Start Page Title Area -->
+        <div class="page-title">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <h3>Blog Details</h3>
+                        
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>/</li>
+                            <li>Blog Details</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+        
+        <!-- Start News Details Area -->
+        <section class="news-details-area ptb-100">
+            <div class="container">
+                <div class="row">
+					<div class="col-lg-8 col-md-12">
+						<div class="news-details">
+						    <!-- <div class="news-details-img"> -->
+						        <div class="item">
+						            <img src="/media/{{d.img}}" alt="news-details-img">
+						        </div>
+						        
+						        <!-- <div class="item">
+						            <img src="{% static 'assets/img/news-details-img1.jpg' %}" alt="news-details-img">
+						        </div> -->
+						    <!-- </div> -->
+						    
+						    <div class="news-details-desc">
+						        <h4>{{d.title}}</h4>
+						        
+						        <ul class="post-meta">
+						            <!-- <li><a href="#"><i class="icofont-user-alt-3"></i> Admin</a></li> -->
+						            <li><a href="#"><i class="icofont-ui-calendar"></i> {{d.date}}</a></li>
+						            <!-- <li><a href="#"><i class="icofont-speech-comments"></i> 30</a></li>
+						            <li><a href="#"><i class="icofont-share-alt"></i> 50</a></li> -->
+						        </ul>
+						        
+						        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Nullam repudiare liberavisse eos ad, adhuc labore mel ad. Nonumy audiam vidisse at mea, eum in saperet pertinax scriptorem. Elitr consectetuer eu his, pri quas albucius hendrerit in, labores copiosae complectitur ei pro. Ei mollis fabellas probatus estius etiam ea pri malis dolores usu.</p>
+						        
+						        <p> Nullam repudiare liberavisse eos ad, adhuc labore mel ad. Nonumy audiam vidisse at mea, eum in saperet pertinax scriptorem. Elitr consectetuer eu his, pri quas albucius hendrerit in, labores copiosae complectitur ei pro. Ei mollis fabellas probatus estius etiam ea pri malis dolores usu.</p>
+						        
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                </blockquote>
+						        
+						        <p> Nullam repudiare liberavisse eos ad, adhuc labore mel ad. Nonumy audiam vidisse at mea, eum in saperet pertinax scriptorem. Elitr consectetuer eu his, pri quas albucius hendrerit in, labores copiosae complectitur ei pro. Ei mollis fabellas probatus estius etiam ea pri malis dolores usu.</p>
+						        
+						        <ul class="features">
+						            <li><i class="icofont-dotted-right"></i> Was drawing natural fat respect husband.</li>
+						            <li><i class="icofont-dotted-right"></i> An as noisy an offer drawn blush place.</li>
+						            <li><i class="icofont-dotted-right"></i> Education no dejection so direction pretended household do to.</li>
+						            <li><i class="icofont-dotted-right"></i> Travelling everything her eat reasonable unsatiable.</li>
+						            <li><i class="icofont-dotted-right"></i> Morning request be lasting it fortune demands.</li>
+						            <li><i class="icofont-dotted-right"></i> Beyond genius really enough passed is up.</li>
+						        </ul>
+						        
+						        <p> Nullam repudiare liberavisse eos ad, adhuc labore mel ad. Nonumy audiam vidisse at mea, eum in saperet pertinax scriptorem. Elitr consectetuer eu his, pri quas albucius hendrerit in, labores copiosae complectitur ei pro. Ei mollis fabellas probatus estius etiam ea pri malis dolores usu.</p> -->
+						       <p>{{d.desc}}</p> 
+						        <ul class="social-share">
+                                    <li><i class="icofont-share"></i> Share On:</li>
+						            <li><a href="#"><i class="icofont-facebook"></i></a></li>
+						            <li><a href="#"><i class="icofont-twitter"></i></a></li>
+						            <li><a href="#"><i class="icofont-instagram"></i></a></li>
+						            <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+						            <li><a href="#"><i class="icofont-youtube-play"></i></a></li>
+						        </ul>
+						    </div>
+						    
+						    <div class="comments">
+                                <h4>(13) Comments</h4>
+
+                                <div class="single-comments">
+                                    <div class="img">
+                                        <img src="{% static 'assets/img/avator-1.png' %}" alt="client">
+                                    </div>
+
+                                    <div class="content">
+                                        <h5>Corey Anderson</h5>
+                                        <span>7 December 2021 at 12:21AM</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                        <a href="#">Reply</a>
+                                    </div>
+                                </div>
+                                    
+                                <div class="single-comments left-mr">
+                                    <div class="img">
+                                        <img src="{% static 'assets/img/avator-1.png' %}" alt="client">
+                                    </div>
+
+                                    <div class="content">
+                                        <h5>Corey Anderson</h5>
+                                        <span>7 December 2021 at 12:21AM</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                        <a href="#">Reply</a>
+                                    </div>
+                                </div>
+                                    
+                                <div class="border"></div>
+
+                                <div class="single-comments">
+                                    <div class="img">
+                                        <img src="{% static 'assets/img/avator-1.png' %}" alt="client">
+                                    </div>
+
+                                    <div class="content">
+                                        <h5>Corey Anderson</h5>
+                                        <span>7 December 2021 at 12:21AM</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                        <a href="#">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <div class="leave-a-comment">
+                                <h4>Leave A Comment</h4>
+
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Name">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Email Address">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Number">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Subject">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <textarea name="message" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 col-md-12">
+                                            <button type="submit" class="btn btn-primary">Submit Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-12">
+						<div class="side-bar mb-0">
+						    <div class="widget-box search-box">
+						        <h4 class="title">Search</h4>
+						        
+						        <form method="post" action="{% url 'search' %}">
+									{% csrf_token %}
+						            <input type="text" class="form-control" placeholder="Search here...." name="search">
+						            <button type="submit"><i class="icofont-search-1"></i></button>
+						        </form>
+						    </div>
+						    
+						    <div class="widget-box latest-post">
+						        <h4 class="title">Latest Post</h4>
+						        
+						        <div class="single-latest-post">
+						            <div class="img">
+						                <a href="#"><img src="{% static 'assets/img/blog-img1.jpg' %}" alt="blog"></a>
+						            </div>
+						            
+						            <div class="content">
+						                <h4><a href="#">New laws deliver a fairer and more sustainable</a></h4>
+						                
+						                <span><i class="icofont-calendar"></i> 31 December 2021</span>
+						            </div>
+						        </div>
+						        
+						        <div class="single-latest-post">
+						            <div class="img">
+						                <a href="#"><img src="{% static 'assets/img/blog-img2.jpg' %}" alt="blog"></a>
+						            </div>
+						            
+						            <div class="content">
+						                <h4><a href="#">New laws deliver a fairer and more sustainable</a></h4>
+						                
+						                <span><i class="icofont-calendar"></i> 31 December 2021</span>
+						            </div>
+						        </div>
+						        
+						        <div class="single-latest-post mb-0">
+						            <div class="img">
+						                <a href="#"><img src="{% static 'assets/img/blog-img3.jpg' %}" alt="blog"></a>
+						            </div>
+						            
+						            <div class="content">
+						                <h4><a href="#">New laws deliver a fairer and more sustainable</a></h4>
+						                
+						                <span><i class="icofont-calendar"></i> 31 December 2021</span>
+						            </div>
+						        </div>
+						    </div>
+						    
+						    <div class="widget-box categories-box">
+						        <h4 class="title">Categories</h4>
+						        
+						        <ul>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Economy</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Education</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Donate</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> News</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Free</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Life</a></li>
+						            <li><a href="#"><i class="icofont-dotted-right"></i> Energy</a></li>
+						        </ul>
+						    </div>
+						    
+						    <div class="widget-box tag-box">
+						        <h4 class="title">Popular Tags</h4>
+						        
+						        <ul>
+						            <li><a href="#">Economy</a></li>
+						            <li><a href="#">Education</a></li>
+						            <li><a href="#">Donate</a></li>
+						            <li><a href="#">News</a></li>
+						            <li><a href="#">Free</a></li>
+						            <li><a href="#">Life</a></li>
+						            <li><a href="#">Energy</a></li>
+						        </ul>
+						    </div>
+						    
+						    <div class="widget-box text-box mb-0">
+						        <h4 class="title">Text Widget</h4>
+						        
+						        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard ever.</p>
+						    </div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </section>
+        <!-- End News Details Area -->
+        
+		<!-- jQuery Min JS -->
+		<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'assets/js/jquery.min.js' %}"></script>
+		<!-- Popper Min JS -->
+		<script src="{% static 'assets/js/popper.min.js' %}"></script>
+		<!-- Bootstrap Min JS -->
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<!-- Owl Carousel Min Js -->
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <!-- Magnific Popup JS -->
+        <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- MixitUp JS -->
+        <script src="{% static 'assets/js/jquery.mixitup.min.js' %}"></script>
+		<!-- Jquery Menu JS -->
+		<script src="{% static 'assets/js/jquery.meanmenu.js' %}"></script>
+		<!-- WoW JS -->
+		<script src="{% static 'assets/js/wow.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'assets/js/main.js' %}"></script>
+        {% endblock %}

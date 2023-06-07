@@ -1,0 +1,1046 @@
+@media only screen and (max-width: 767px) {
+    .news-details-desc .social-share {
+        text-align: center;
+    }
+    .campaignsBox .campaigns-content h3 {
+        font-size: 18px;
+    }
+    .ptb-100 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .form-control {
+        height: 45px;
+        padding: 6px 18px;
+    }
+    .mt-100 {
+        margin-top: 15px;
+    }
+    .btn {
+        padding: 9px 20px;
+        font-size: 14px;
+    }
+    .section-title {
+        margin-bottom: 30px;
+    }
+    .section-title h2 {
+        font-size: 25px;
+    }
+    .section-title h2::before {
+        bottom: 8px;
+        height: 5px;
+    }
+    .top-header {
+        padding: 10px 0;
+        text-align: center;
+    }
+    .top-header .social-link {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .middle-header {
+        padding: 20px 0;
+        text-align: center;
+    }
+    .middle-header ul {
+        display: none;
+    }
+    .main-banner {
+        height: 100%;
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+    .main-banner::before {
+        display: none;
+    }
+    .main-banner-content {
+        margin-top: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .main-banner-content h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .main-banner-content p {
+        font-size: 15px;
+    }
+    .main-banner-img {
+        position: relative;
+        top: 0;
+        text-align: center;
+        max-width: 300px;
+        margin: auto;
+    }
+    .about-content {
+        padding: 30px 20px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .about-content h2 {
+        font-size: 25px;
+    }
+    .about-content h2::before {
+        height: 5px;
+        bottom: 7px;
+    }
+    .single-campaigns .date span {
+        font-size: 18px;
+    }
+    .about-content .btn {
+        margin-top: 20px;
+    }
+    .about-box {
+        padding-left: 55px;
+        margin-top: 30px;
+    }
+    .about-box i {
+        font-size: 40px;
+    }
+    .about-box h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .about-box p {
+        margin-bottom: 15px;
+    }
+    .support-area {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .support-content {
+        margin-bottom: 30px;
+    }
+    .support-content h3 {
+        font-size: 22px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .support-image {
+        position: relative;
+        top: 0;
+        max-width: 270px;
+        margin: auto;
+    }
+    .mission-area {
+        padding-bottom: 15px;
+    }
+    .single-mission h3 i {
+        height: 40px;
+        line-height: 38px;
+        font-size: 26px;
+    }
+    .single-mission h3 {
+        font-size: 18px;
+        margin: 25px 0 0;
+    }
+    .testimonials-area h2 {
+        font-size: 30px;
+    }
+    .testimonials-area h2::before {
+        bottom: 7px;
+        height: 5px;
+    }
+    .funfacts-area {
+        padding-bottom: 20px;
+        padding-top: 50px;
+    }
+    .funFact {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .funFact.bottom-line::before,
+    .funFact.top-line::before {
+        display: none;
+    }
+    .funFact.bottom-line::after,
+    .funFact.top-line::after {
+        display: none;
+    }
+    .funFact p {
+        font-size: 16px;
+    }
+    .single-campaigns .date {
+        font-size: 14px !important;
+        padding: 10px 8px;
+    }
+    .single-campaigns .campaigns-content h3 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .campaigns-box {
+        margin-top: 25px;
+    }
+    .campaigns-box .single-campaigns .campaigns-content {
+        padding-left: 95px;
+    }
+    .campaigns-box .single-campaigns .campaigns-content .date {
+        top: 4px;
+    }
+    .campaigns-box .single-campaigns .campaigns-content h3 {
+        font-size: 16px;
+        margin-top: 0;
+        line-height: 25px;
+    }
+    .donate-price ul {
+        margin-bottom: 25px;
+    }
+    .donate-price ul li a {
+        margin-bottom: 12px;
+    }
+    .history-area {
+        padding-bottom: 20px;
+    }
+    .history-timeline {
+        margin: 0 auto 0;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .single-history {
+        margin-bottom: 30px;
+    }
+    .history-timeline .single-history .history-content {
+        padding: 30px 30px 22px 65px;
+        max-width: 100%;
+    }
+    .history-timeline .single-history .history-content h4 {
+        margin-bottom: 10px;
+    }
+    .history-timeline .single-history .history-content {
+        box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        background: #fff;
+    }
+    .history-timeline .single-history .history-content h3 {
+        left: 15px;
+        font-size: 30px;
+        top: 25px;
+    }
+    .history-timeline .single-history .history-content.left-side {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .history-timeline .single-history .history-content.right-side {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .video.text-center {
+        display: none;
+    }
+    .testimonials-area {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .feedback-image {
+        position: relative;
+        bottom: 0;
+        margin-top: 40px;
+    }
+    .newsletter h3 {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .newsletter form .subscribe-btn {
+        position: unset;
+        font-size: 15px;
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    .achievement-content {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 12px;
+    }
+    .main-banner-two {
+        height: 100%;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+    .main-banner-two .d-table {
+        display: block !important;
+    }
+    .main-banner-two .d-table-cell {
+        display: block !important;
+    }
+    .home-slides.owl-theme .owl-nav [class*="owl-"] {
+        font-size: 45px;
+        margin-top: 0;
+        left: 0;
+        top: auto;
+        bottom: -60px;
+    }
+    .home-slides.owl-theme .owl-nav .owl-next {
+        left: auto;
+        right: 0;
+    }
+    .home-slides h1 {
+        font-size: 30px;
+    }
+    .boxes-area {
+        padding-bottom: 20px;
+        background-color: #333;
+    }
+    .boxes-content {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .boxes-content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 35px;
+    }
+    .shorting-menu {
+        margin-bottom: 22px;
+    }
+    .shorting-menu .filter {
+        border: 1px solid #464751;
+        padding: 6px 19px;
+        margin: 0 1px 8px;
+        font-size: 15px;
+    }
+    .single-photo img {
+        width: 100%;
+    }
+    .single-blog-post a img {
+        width: 100%;
+    }
+    .latest-news {
+        padding-bottom: 20px;
+    }
+    .page-title h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .events-details-desc h4 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .events-details-box h4 {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+    .volunteer-area {
+        padding-bottom: 20px;
+    }
+    .single-team img {
+        width: 100%;
+    }
+    .volunteer-details-img img {
+        width: 100%;
+    }
+    .volunteer-details {
+        margin-top: 30px;
+    }
+    .volunteer-details h3 {
+        font-size: 20px;
+    }
+    .volunteer-details .quick-contact h4 {
+        font-size: 20px;
+    }
+    .error-wall h1 {
+        font-size: 30px;
+    }
+    .error-wall h3 {
+        font-size: 20px;
+        margin: 10px 0 0;
+    }
+    .error-wall h4 {
+        font-size: 20px;
+    }
+    .single-questions h4 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .become-a-volunteer h3 {
+        font-size: 23px;
+        margin-top: -4px;
+        margin-bottom: 30px;
+    }
+    .become-a-volunteer form .form-control {
+        font-size: 14px;
+        height: 45px;
+        padding: 6px 20px;
+    }
+    .campaignsBox .campaigns-content {
+        padding-bottom: 5px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .donate h3 {
+        font-size: 24px;
+    }
+    .donate .notice i {
+        top: 28%;
+    }
+    .donate .give-donation-radio-list li {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .donate .give-payment-mode-select h4 {
+        font-size: 20px;
+    }
+    .donate .give-payment-mode-select ul li {
+        margin-right: 20px;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .donate .payment-personal-info h4 {
+        font-size: 20px;
+    }
+    .donate .payment-personal-info .form-control {
+        width: 100%;
+    }
+    .news-details-desc h4 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .news-details-desc .post-meta li {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .news-details-desc .blockquote {
+        padding: 20px;
+    }
+    .news-details-desc .blockquote p {
+        font-size: 17px;
+    }
+    .news-details .single-comments .content h5 {
+        font-size: 17px;
+    }
+    .news-details .single-comments .content span {
+        font-size: 14px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    .contact-info {
+        margin-top: 40px;
+    }
+    .contact-info h4 {
+        font-size: 22px;
+    }
+    .side-bar {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .side-bar .widget-box .title {
+        font-size: 18px;
+    }
+    .pagination-area {
+        margin-top: 0;
+    }
+    .page-link {
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+    .footer-widget {
+        margin-bottom: 30px;
+    }
+    .footer-area .bg {
+        padding-top: 30px !important;
+        margin-bottom: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .footer-area .ptb-100 {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .footer-widget .logo {
+        margin-top: 0;
+    }
+    .quick-links-widget {
+        margin-left: 0;
+    }
+    .copyright-area {
+        padding: 30px 0;
+        text-align: center;
+    }
+    .copyright-area ul {
+        text-align: center;
+        margin-top: 12px;
+    }
+    .achievement-area {
+        background-color: #333;
+    }
+    .achievement-area::after,
+    .achievement-area::before {
+        display: none;
+    }
+    .achievement-area .overlay {
+        display: none;
+    }
+    .boxes-area::after,
+    .boxes-area::before {
+        display: none;
+    }
+    .page-title ul {
+        text-align: center;
+    }
+    #map {
+        margin-bottom: 30px;
+    }
+    .news-details-desc .social-share li a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .news-details .single-comments.left-mr {
+        margin-left: 0;
+    }
+    .donate .payment-personal-info .form-control {
+        width: 100%;
+    }
+    .achievement-content .item p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .achievement-content .item h4 {
+        font-size: 16px;
+    }
+    .testimonials-area {
+        background: #464751;
+        background-image: none;
+    }
+    .testimonials-area h2 {
+        text-align: center;
+        display: block;
+    }
+    .testimonials-area h2::before {
+        display: none;
+    }
+    .feedback-slides .owl-dots {
+        bottom: 55px;
+    }
+    .newsletter span {
+        font-size: 17px;
+    }
+    .history-timeline .single-history .history-content {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .boxes-content p {
+        margin-bottom: 20px;
+    }
+    .page-link {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .side-bar .search-box form button {
+        height: 45px;
+    }
+    .news-details .comments h4 {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .news-details .leave-a-comment h4 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .news-details .single-comments {
+        padding-left: 70px;
+    }
+    .news-details .single-comments .content a {
+        padding: 3px 10px;
+        font-size: 13px;
+        top: -4px;
+    }
+    .news-details .leave-a-comment {
+        margin-top: 30px;
+    }
+    .news-details-desc .post-meta {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .payment-personal-info {
+        margin-top: 20px;
+    }
+    .become-a-volunteer .btn {
+        padding: 10px 30px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .faq-contact {
+        padding: 30px 20px;
+    }
+    .faq-contact h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .faq-contact .btn {
+        margin-top: 5px;
+    }
+    .error-wall {
+        padding: 30px 20px;
+    }
+    .page-title {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .news-details-desc .social-share li:first-child {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .news-details-desc .social-share li a {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .news-details-desc .social-share {
+        text-align: center;
+    }
+    .news-details-desc .social-share {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pagination-area {
+        margin-top: 0;
+    }
+    .become-a-volunteer .btn {
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+    .become-a-volunteer form .form-control {
+        font-size: 15px;
+        height: 50px;
+    }
+    .payment-personal-info {
+        margin-top: 20px;
+    }
+    .donate h3 {
+        font-size: 25px;
+    }
+    .donate .give-payment-mode-select h4 {
+        font-size: 20px;
+    }
+    .donate .payment-personal-info h4 {
+        font-size: 20px;
+    }
+    .page-link {
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+    .page-title {
+        text-align: center;
+    }
+    .campaignsBox .campaigns-content h3 {
+        font-size: 18px;
+    }
+    .history-timeline .single-history .history-content {
+        box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        background: #fff;
+    }
+    .single-blog-post .blog-content h4 {
+        font-size: 16px;
+    }
+    .error-wall h1 {
+        font-size: 40px;
+    }
+    .error-wall h3 {
+        font-size: 25px;
+    }
+    .history-timeline .single-history .history-content h3 {
+        font-size: 35px;
+        top: 40px;
+    }
+    .page-title h3 {
+        font-size: 35px;
+    }
+    .middle-header ul li {
+        padding-left: 45px;
+        margin-left: 20px;
+    }
+    .middle-header ul li .icon {
+        font-size: 17px;
+        width: 35px;
+        height: 35px;
+        line-height: 34px;
+    }
+    .middle-header ul li .title {
+        font-size: 14px;
+    }
+    .middle-header ul li a {
+        font-size: 14px;
+    }
+    .middle-header ul li:last-child {
+        display: none;
+    }
+    .main-banner {
+        height: 100%;
+        padding-top: 60px;
+        text-align: center;
+    }
+    .main-banner-content {
+        margin-top: 0;
+        margin-bottom: 45px;
+    }
+    .main-banner-content h1 {
+        font-size: 35px;
+    }
+    .main-banner-img {
+        position: relative;
+        top: 0;
+        text-align: center;
+    }
+    .main-banner-img img {
+        height: 535px;
+    }
+    .about-image img {
+        width: 100%;
+    }
+    .about-content {
+        padding: 30px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .about-content h2 {
+        font-size: 35px;
+    }
+    .about-content h2::before {
+        bottom: 8px;
+        height: 5px;
+    }
+    .about-box {
+        margin-bottom: 30px;
+    }
+    .about-box h3 {
+        font-size: 22px;
+    }
+    .support-area {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .support-image {
+        display: none;
+    }
+    .support-content h3 {
+        font-size: 30px;
+    }
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .section-title h2::before {
+        bottom: 8px;
+        height: 5px;
+    }
+    .single-mission h3 {
+        font-size: 20px;
+    }
+    .funFact p {
+        font-size: 16px;
+    }
+    .single-campaigns .campaigns-img img {
+        width: 100%;
+    }
+    .campaigns-box {
+        margin-top: 30px;
+    }
+    .campaigns-box .single-campaigns .campaigns-content .date {
+        top: 8px;
+        padding: 10px 14px;
+    }
+    .history-timeline {
+        width: auto;
+        margin: 0 auto 0;
+    }
+    .single-history {
+        margin-bottom: 30px;
+    }
+    .history-timeline .single-history .history-content {
+        padding: 40px 25px 35px 90px;
+    }
+    .video-play-btn {
+        margin: -45px 0 0 -30px;
+    }
+    .feedback-image {
+        display: none;
+    }
+    .newsletter h3 {
+        font-size: 30px;
+    }
+    .home-slides h1 {
+        font-size: 36px;
+    }
+    .boxes-content {
+        padding: 0 0;
+    }
+    .boxes-content h3 {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    .main-banner-two {
+        height: 100%;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    .home-slides.owl-theme .owl-nav [class*="owl-"] {
+        left: -18px;
+        font-size: 45px;
+    }
+    .home-slides.owl-theme .owl-nav .owl-next {
+        left: auto;
+        right: -18px;
+    }
+    .contact-info {
+        margin-top: 30px;
+    }
+    .side-bar {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .footer-area {
+        padding: 80px 0 0;
+    }
+    .footer-area .ptb-100 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .footer-area .bg {
+        background: 0 0;
+    }
+    .footer-widget {
+        margin-bottom: 40px;
+    }
+    .copyright-area {
+        margin-top: 40px;
+    }
+    .history-timeline .single-history .history-content.left-side {
+        position: initial;
+        max-width: 558px;
+    }
+    .history-timeline .single-history .history-content.right-side {
+        position: initial;
+        max-width: 558px;
+    }
+    .achievement-area {
+        background-color: #333;
+    }
+    .achievement-area::after,
+    .achievement-area::before {
+        display: none;
+    }
+    .achievement-area .overlay {
+        display: none;
+    }
+    .testimonials-area h2 {
+        font-size: 30px;
+    }
+    .boxes-content p {
+        margin-bottom: 22px;
+    }
+    .section-title {
+        margin-bottom: 40px;
+    }
+    .home-slides {
+        text-align: center;
+    }
+    .ptb-100 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .about-area {
+        padding-bottom: 30px;
+    }
+    .mt-100 {
+        margin-top: 60px;
+    }
+    .mission-area {
+        padding-bottom: 30px;
+    }
+    .funFact {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .funFact.bottom-line::after,
+    .funFact.top-line::after {
+        height: 80px;
+    }
+    .history-area {
+        padding-bottom: 30px;
+    }
+    .volunteer-area {
+        padding-bottom: 30px;
+    }
+    .latest-news {
+        padding-bottom: 30px;
+    }
+    .page-title {
+        height: 220px;
+    }
+    .testimonials-area {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .page-title {
+        height: 220px;
+    }
+    .error-wall h1 {
+        font-size: 40px;
+    }
+    .error-wall h3 {
+        font-size: 25px;
+    }
+    .error-wall h4 {
+        font-size: 25px;
+    }
+    .become-a-volunteer .btn {
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+    .become-a-volunteer form .form-control {
+        font-size: 15px;
+        height: 50px;
+    }
+    .donate h3 {
+        font-size: 30px;
+    }
+    .donate .give-donation-radio-list li {
+        margin-right: 8px;
+        padding: 11px 22px;
+        font-size: 16px;
+    }
+    .events-details-desc h4 {
+        line-height: 35px;
+    }
+    .page-link {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .campaignsBox .campaigns-content h3 {
+        font-size: 16px;
+    }
+    .main-banner-two {
+        height: 540px;
+    }
+    .page-title h3 {
+        font-size: 40px;
+    }
+    .main-menu-area nav ul li ul.dropdown-menu li ul.sub-menu {
+        left: 151px;
+    }
+    .main-menu-area.main-menu-three nav ul li {
+        margin: 0 14px;
+    }
+    .main-menu-area nav ul li.kylehope-logo {
+        margin: 0 35px !important;
+    }
+    .main-menu-area.main-menu-three nav ul li ul.dropdown-menu li ul.sub-menu {
+        left: auto;
+        right: 200px;
+    }
+    .main-menu-area.main-menu-three nav ul li ul.dropdown-menu {
+        left: -57px;
+    }
+    .main-banner {
+        height: 480px;
+    }
+    .main-banner-content {
+        margin-top: 70px;
+    }
+    .main-banner-content h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .main-banner-img {
+        top: 38px;
+        max-width: 340px;
+        position: relative;
+    }
+    .home-slides.owl-theme .owl-nav [class*="owl-"] {
+        left: -15px;
+    }
+    .home-slides.owl-theme .owl-nav .owl-next {
+        left: auto;
+        right: -15px;
+    }
+    .main-banner-two .col-lg-7 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about-content {
+        margin-top: 22px;
+    }
+    .section-title h2 {
+        font-size: 35px;
+    }
+    .section-title h2::before {
+        bottom: 10px;
+    }
+    .support-image {
+        top: 8px;
+    }
+    .volunteer-contact-info .box p {
+        font-size: 14px;
+    }
+    .about-content h2 {
+        font-size: 30px;
+    }
+    .campaigns-box .single-campaigns:nth-child(4),
+    .campaigns-box .single-campaigns:nth-child(5) {
+        display: none;
+    }
+    .home-slides {
+        text-align: center;
+    }
+    .home-slides h1 {
+        font-size: 45px;
+    }
+    .home-slides p {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .boxes-content h3 {
+        font-size: 22px;
+    }
+    .support-content h3 {
+        font-size: 30px;
+    }
+    .testimonials-area h2 {
+        font-size: 35px;
+    }
+    .newsletter h3 {
+        font-size: 35px;
+    }
+    .ptb-100 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .mt-100 {
+        margin-top: 70px;
+    }
+    .mission-area {
+        padding-bottom: 40px;
+    }
+    .history-area {
+        padding-bottom: 40px;
+    }
+    .volunteer-area {
+        padding-bottom: 40px;
+    }
+    .latest-news {
+        padding-bottom: 40px;
+    }
+    .testimonials-area {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}

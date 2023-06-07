@@ -1,0 +1,28 @@
+{% extends 'superuser/basic.html' %}
+{% block body %}
+{% load custumfilter %}
+<div class=" smart-card">
+    <h4 class="title">Available {{currentmodelname|title}}s in <a
+            href="{% url 'editdatamodel' appname modelname currentmodel.pk 'edit' %}">{{currentmodel}}</a> </h4>
+    <div class="table-responsive">
+        <div class=" shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="my-3">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-backdrop='static'
+                    data-keyboard='false'>+Add New {{currentmodelname|title}} </button>
+            </div>
+           {% include 'superuser/componets/datatable.html' with modeldata=availbledata fields=fields appname=currentappname modelname=currentmodelname %}
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block formtitle %}+Add New {{currentmodelname|title}}{% endblock %}
+{% block addform %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    {{form.media}}
+    <input type="submit" class="btn btn-primary my-3" value="submit">
+</form>
+{% endblock %}

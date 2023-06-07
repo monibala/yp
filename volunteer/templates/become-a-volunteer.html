@@ -1,0 +1,109 @@
+{% extends 'base.html' %}        
+{% block body %}
+{% load static %}
+        <!-- Start Become a Volunteer Area -->
+        <section class="become-a-volunteer ptb-100">
+            <div class="container">
+                <h3>Join us as a Volunteer</h3>
+                
+                <form method="post">{% csrf_token %}
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First name" name="firstname">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Last name" name="lastname">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" name="email">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Address" name="address">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Country name" name="country">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="City name" name="city">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Zip code" name="zipcode">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Phone number" name="mobile">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12">
+                            <button class="btn btn-primary" type="submit">Join Now!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- End Become a Volunteer Area -->
+        
+        <!-- Start Support Area -->
+        <section class="support-area ptb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="support-content">
+                            <h3>Your political <span>support</span> make bigest help for big history</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <a href="#" class="btn btn-secondary">Contact Us</a>
+                            <a href="#" class="btn btn-primary">Donate Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="support-image wow fadeInUp">
+                            <img src="{% static 'assets/img/shouting.png' %}" alt="shouting">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Support Area -->
+        
+		<!-- jQuery Min JS -->
+		<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'assets/js/jquery.min.js' %}"></script>
+		<!-- Popper Min JS -->
+		<script src="{% static 'assets/js/popper.min.js' %}"></script>
+		<!-- Bootstrap Min JS -->
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<!-- Owl Carousel Min Js -->
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <!-- Magnific Popup JS -->
+        <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- MixitUp JS -->
+        <script src="{% static 'assets/js/jquery.mixitup.min.js' %}"></script>
+		<!-- Jquery Menu JS -->
+		<script src="{% static 'assets/js/jquery.meanmenu.js' %}"></script>
+		<!-- WoW JS -->
+		<script src="{% static 'assets/js/wow.js' %}"></script>
+		<!-- Main JS -->
+		<script src="{% static 'assets/js/main.js' %}"></script>
+       {% endblock %}
